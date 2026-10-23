@@ -1,9 +1,11 @@
-# Shake Builder PWA 0.3.1
+# Shake Builder PWA 0.4
+
+Neu: Pre-Workout- und Bike-to-Work-Vorlagen aus den beiden Originalmatrizen 1.4. Nach dem App-Update im neuen Reiter Pre & Bike den Knopf Pre- & Bike-Rezepte und Produkte importieren wählen. Die Vorschau ergänzt zwölf Startrezepte; alle vierzehn Vorlagen stehen im neuen Reiter bereit. Vorhandene Rezepte bleiben erhalten.
 
 ## Update auf GitHub Pages
 1. In der bisherigen App auf jedem Gerät unter Sicherung eine JSON-Datei exportieren.
 2. ZIP entpacken und seinen Inhalt in die Wurzel des bisherigen Repositorys MichaelSchu67/shake-builder übernehmen. Bestehende Pages-Adresse und Browserprofil beibehalten. Kein zusätzlicher Unterordner.
-3. Die bisherige GitHub-Pages-Adresse öffnen. Nach dem ersten Laden die App ganz schließen und erneut öffnen, bis in der Kopfzeile PWA 0.3.1 steht. Bei Bedarf im Browser neu laden. Browserdaten nicht löschen.
+3. Die bisherige GitHub-Pages-Adresse öffnen. Nach dem ersten Laden die App ganz schließen und erneut öffnen, bis in der Kopfzeile PWA 0.4 steht. Bei Bedarf im Browser neu laden. Browserdaten nicht löschen.
 4. Vorhandene lokale Rezepte und Produkte bleiben erhalten. Der Speicherschlüssel wird beibehalten. Es erfolgt kein automatischer Produktimport.
 
 ## Recovery-Rezepte erstellen
@@ -57,3 +59,23 @@ Die Tests verwenden simulierte Oberflächen und prüfen Berechnungen und Speiche
 Recovery-Auswahllisten zeigen passende Produktkategorien: Proteinprodukte, Früchte, Hafer, Kohlenhydratquellen sowie optionale Module. Kohlenhydratquelle ersetzt die bisherige Beschriftung Maltodextrin für das KH-Ziel; auch Cluster Dextrin ist auswählbar. Die Berechnung verwendet den tatsächlichen KH-Gehalt des gewählten Produkts. Die Matrix nennt ursprünglich Maltodextrin; die alternative Produktwahl erfolgt durch den Nutzer.
 
 Bekannte Produkte aus Backup, Master 1.5 und Matrix-Früchten werden anhand ihrer bestehenden IDs zugeordnet. Unbekannte eigene Produkte bleiben unter Sonstiges. Unter Produkte → Kategorie für den Recovery-Baukasten kann die Zuordnung gespeichert oder korrigiert werden. Dafür ist kein Neuimport erforderlich. Kategorien bleiben im JSON-Backup erhalten. Die normale Produktübersicht und der freie Rezepteditor zeigen weiterhin alle Produkte alphabetisch. Im Recovery-Baukasten werden für Protein, Frucht, Hafer und KH-Quelle Produkte mit Einheit g unterstützt. Für Säfte im PP-Modul ist auch ml möglich.
+
+## Pre-Workout und Bike-to-Work in 0.4
+
+Quellen: Pre-Workout-Master-Matrix.docx (Dokumenttitel Pre-Workout-Master-Matrix 1.4) und Bike-to-Work-Matrix 1.4.docx. Die Dokumente wurden gelesen und nicht verändert. Aussagen zu gesundheitlichen oder sportwissenschaftlichen Wirkungen werden als Quelleninhalt behandelt und nicht neu bewertet.
+
+Enthalten sind PRE-SWIM LOCKER, SENSITIVE, STANDARD und HARD, PRE-STRENGTH STANDARD und VOLUME sowie ARGININ PRE-WORKOUT. Dazu kommen Classic Banana, Blueberry Beet, Cherry Beet, Strawberry Light, Pineapple Fresh, Mango Beet und Watermelon Fresh.
+
+Im Reiter Pre & Bike eine Vorlage wählen. Originalmengen und Mengenbereiche sind vorgegeben. Bei Bereichen ist die untere Quellgrenze voreingestellt; dies ist eine sichtbar ausgewiesene Startvariante. Wasser wird separat in ml gespeichert. Optionale Zutaten sind zunächst ausgeschaltet. Für jeden Drink lässt sich ein neues Rezept speichern; es steht anschließend unter Rezepte mit Wasser und Quellenhinweisen. Die Matrixnotizen beschreiben den Erstellungsstand, spätere Änderungen der Zutaten im freien Editor prüfen.
+
+Die feste Bike-Basis ist 250 ml Alnatura Rote-Bete-Saft, 100 g ja! Magerquark, 15 g Achterhof Bio Protein Mix Rote Beeren und 0,5 g Salz. Die jeweils genannte Frucht und das separate Wasser kommen dazu. Heidelbeeren sind als eigene Produktvariante erfasst und werden nicht stillschweigend mit Wildheidelbeeren gleichgesetzt. Ananas, Wassermelone, ja! Magerquark und Salz erhalten ausdrücklich unvollständige Produktdatensätze. Der vorhandene generische Quark wird nicht als belegter ja!-Quark ausgegeben. Das Performance-Modul erlaubt optional 10–20 g Maltodextrin; die tatsächlichen Kohlenhydrate werden aus dem Produktdatensatz berechnet. Die Quelle vereinfacht diese Mengen zu 10–20 g KH; diese Vereinfachung wird nicht ungeprüft in die Produktwerte übernommen.
+
+Bei Pre-Workout wird das belegte AlpenPower Cluster Dextrin (HBCD) verwendet. Die MINAID-Mengen sind 0,45 g bei Sensitive bzw. 0,9 g bei Standard/Hard. Die in der Matrix angegebenen Pulvergramm sind Rezeptmengen und werden nicht als exakte Gramm Kohlenhydrate ausgegeben.
+
+Bulk Plus ist ein anderes Produkt als Bulk Elektrolytpulver P001. Die Quelle nennt für die Kraft-Drinks eine halbe Herstellerportion, aber kein Grammgewicht. Deshalb werden PRE-STRENGTH STANDARD und VOLUME als offene Vorlagen geliefert und erst nach Eingabe einer belegten Grammmenge speicherbar. Die App erfindet kein Portionsgewicht und substituiert nicht automatisch P001. Citrullin/Arginin stehen entsprechend der Endfassung als optionale Zutaten bereit, bei der Arginin-Phase ist Arginin dagegen Bestandteil des gewählten Rezepts. Produktidentität/Zusammensetzung dieser Zusätze sind noch zu belegen; Citrullin und Citrullin-Malat werden nicht gleichgesetzt.
+
+Nitrat bleibt das im Original separat vorgesehene Modul mit eigenem Timing. Ohne deklarierten Nitratgehalt wird weder eine Produktdosis berechnet noch ein Rote-Bete-Shot in den Pre-Drink gemischt. Aus dem Nitratgehalt des Bike-Safts wird ebenfalls nichts abgeleitet.
+
+Das Startpaket data/pre-bike-startpaket-0.4.json enthält zwölf fertige Startvarianten plus Produktabhängigkeiten. Die Regelsammlung data/pre-bike-vorlagen-1.4.json dokumentiert alle vierzehn Vorlagen, ist aber kein direkt importierbares Schema-1-Backup. Einzelne Produkte haben leere Nährwerte. In diesem Fall ist das Rezept mit bekannten Mengen speicherbar, betroffene Nährwertsummen bleiben jedoch unbekannt. Geschätzte Gesamtbilanzen der Dokumente werden nicht zurückgerechnet. Die bestehenden vorläufigen Backup- und Master-Werte sind keine neue Herstellerprüfung.
+
+Zusätzliche Tests: node tests/workout.test.cjs und node tests/workout-ui.test.cjs prüfen Mengen, optionale Zusätze, offene Portionen, unvollständige Summen, Quellen/Wasser beim erneuten Laden sowie Import ohne Bestandsverlust und ohne Dubletten bei Wiederholung. Die Browseransicht, Installation und Offline-Nutzung auf Zielgeräten sind weiterhin nach Veröffentlichung zu prüfen.

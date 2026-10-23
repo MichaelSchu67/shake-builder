@@ -1,0 +1,10 @@
+const fs=require('fs'),assert=require('node:assert/strict'),{session}=require('./app.test.cjs'),{merge}=require('../import-core');
+const pack=require('../data/pre-bike-startpaket-0.4.json'),original=require('../data/original-backup.json'),initial=merge(original,pack).result,s=session(JSON.stringify(initial));
+s.run(fs.readFileSync('workout-core.js','utf8'));s.run(fs.readFileSync('workout-ui.js','utf8'));
+assert.equal(s.get('workoutSelect').value,'bike-banana');assert.equal(s.get('saveWorkout').disabled,false);
+s.get('workoutName').value='Mein Pre-Ride';s.get('saveWorkout').onclick();
+const saved=JSON.parse(s.data.get('sporternaehrung-shake-builder-v01')),r=saved.recipes.at(-1);assert.equal(r.name,'Mein Pre-Ride');assert.equal(r.matrix.waterMl,100);assert.equal(r.ingredients.length,5);
+const reload=session(JSON.stringify(saved));reload.run('rid=db.recipes.at(-1).id;renderRecipe()');assert(reload.get('recipeNotes').textContent.includes('Bike-to-Work'));
+s.get('workoutSelect').value='pre-strength';s.get('workoutSelect').onchange();assert.equal(s.get('saveWorkout').disabled,true);
+s.run('workoutControls[1].input.value="1";updateWorkout()');assert.equal(s.get('saveWorkout').disabled,false);
+console.log('Pre-/Bike-Oberflächenabläufe bestanden: Auswahl, Rezept speichern, Quellen/Wasser erneut laden, offene Portion sperren.');

@@ -17,11 +17,12 @@ function validate(d, legacy=false){
   rids.add(r.id);
   for(const i of r.ingredients)if(!i||!ids.has(i.productId)||typeof i.amount!=='number'||!Number.isFinite(i.amount)||i.amount<0)throw Error('Fehlender Produktverweis oder ungültige Menge in '+r.name);
   if(r.recovery!==undefined){const m=r.recovery;if(!m||m.version!=='2.9'||typeof m.waterMl!=='number'||!Number.isFinite(m.waterMl)||m.waterMl<0||m.waterMl>10000||!Array.isArray(m.notes)||m.notes.length>100||!m.notes.every(n=>typeof n==='string'&&n.length<=5000))throw Error('Ungültige Recovery-Rezeptnotizen.');}
+  if(r.matrix!==undefined){const m=r.matrix;if(!m||!text(m.source)||!text(m.templateId)||typeof m.waterMl!=='number'||!Number.isFinite(m.waterMl)||m.waterMl<0||m.waterMl>10000||!Array.isArray(m.notes)||m.notes.length>100||!m.notes.every(n=>typeof n==='string'&&n.length<=5000))throw Error('Ungültige Matrix-Rezeptnotizen.');}
  }
  return d;
 }
 const productBody=p=>JSON.stringify([p.name,p.unit,keys.map(k=>p.values[k]??null),p.category??null]);
-const recipeBody=r=>JSON.stringify([r.name,r.ingredients,r.recovery??null]);
+const recipeBody=r=>JSON.stringify([r.name,r.ingredients,r.recovery??null,r.matrix??null]);
 function merge(existing,incoming){
  validate(incoming); validate({...existing,schema:1});
  const result=structuredClone(existing), mapping=new Map(), rows=[];

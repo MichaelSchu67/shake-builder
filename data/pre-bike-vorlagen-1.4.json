@@ -1,0 +1,735 @@
+{
+  "type": "Regeln und Quellvorlagen; kein Schema-1-Import",
+  "templates": [
+    {
+      "id": "pre-easy",
+      "name": "PRE-SWIM LOCKER",
+      "group": "Pre-Workout",
+      "source": "Pre-Workout-Master-Matrix.docx · Titel im Dokument: Pre-Workout-Master-Matrix 1.4",
+      "water": [
+        400,
+        500
+      ],
+      "items": [
+        {
+          "productId": "master15-P024",
+          "name": "AlpenPower Cluster Dextrin / HBCD",
+          "min": 0,
+          "max": 15,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P003",
+          "name": "MINAID Salty Raw",
+          "min": 0,
+          "max": 0.45,
+          "optional": false,
+          "explanation": ""
+        }
+      ],
+      "notes": [
+        "Quelle Abschnitt 15: 0–15 g HBCD und 0–0,45 g MINAID; die untere Grenze ist als Auswahl voreingestellt."
+      ]
+    },
+    {
+      "id": "pre-sensitive",
+      "name": "PRE-SWIM SENSITIVE",
+      "group": "Pre-Workout",
+      "source": "Pre-Workout-Master-Matrix.docx · Titel im Dokument: Pre-Workout-Master-Matrix 1.4",
+      "water": [
+        500,
+        500
+      ],
+      "items": [
+        {
+          "productId": "master15-P024",
+          "name": "AlpenPower Cluster Dextrin / HBCD",
+          "min": 15,
+          "max": 15,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P003",
+          "name": "MINAID Salty Raw",
+          "min": 0.45,
+          "max": 0.45,
+          "optional": false,
+          "explanation": ""
+        }
+      ],
+      "notes": [
+        "Ohne Citrullin und Arginin. Nitrat ist laut Quelle ein separates optionales Modul."
+      ]
+    },
+    {
+      "id": "pre-standard",
+      "name": "PRE-SWIM STANDARD 1.4",
+      "group": "Pre-Workout",
+      "source": "Pre-Workout-Master-Matrix.docx · Titel im Dokument: Pre-Workout-Master-Matrix 1.4",
+      "water": [
+        500,
+        500
+      ],
+      "items": [
+        {
+          "productId": "master15-P024",
+          "name": "AlpenPower Cluster Dextrin / HBCD",
+          "min": 20,
+          "max": 20,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P003",
+          "name": "MINAID Salty Raw",
+          "min": 0.9,
+          "max": 0.9,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-citrullin",
+          "name": "Citrullin (Produkt noch zu belegen)",
+          "min": 6,
+          "max": 6,
+          "optional": true,
+          "explanation": "In der Endfassung der Quelle optional. Produktzusammensetzung noch offen; Citrullin und Citrullin-Malat nicht gleichsetzen."
+        }
+      ],
+      "notes": [
+        "Quelle: Drink 45–60 Minuten vorher. Separates Nitratmodul 2–3 Stunden vorher; kein Nitratprodukt im Drink ergänzt."
+      ]
+    },
+    {
+      "id": "pre-hard",
+      "name": "PRE-SWIM HARD",
+      "group": "Pre-Workout",
+      "source": "Pre-Workout-Master-Matrix.docx · Titel im Dokument: Pre-Workout-Master-Matrix 1.4",
+      "water": [
+        500,
+        600
+      ],
+      "items": [
+        {
+          "productId": "master15-P024",
+          "name": "AlpenPower Cluster Dextrin / HBCD",
+          "min": 30,
+          "max": 30,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P003",
+          "name": "MINAID Salty Raw",
+          "min": 0.9,
+          "max": 0.9,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-citrullin",
+          "name": "Citrullin (Produkt noch zu belegen)",
+          "min": 6,
+          "max": 6,
+          "optional": true,
+          "explanation": "In der Endfassung der Quelle optional. Produktzusammensetzung noch offen; Citrullin und Citrullin-Malat nicht gleichsetzen."
+        }
+      ],
+      "notes": [
+        "Quelle nennt separat 400–500 mg Nitrat, 2–3 Stunden vorher. Ohne deklarierten Nitratgehalt wird keine Produktmenge errechnet."
+      ]
+    },
+    {
+      "id": "pre-strength",
+      "name": "PRE-STRENGTH STANDARD",
+      "group": "Pre-Workout",
+      "source": "Pre-Workout-Master-Matrix.docx · Titel im Dokument: Pre-Workout-Master-Matrix 1.4",
+      "water": [
+        500,
+        500
+      ],
+      "items": [
+        {
+          "productId": "master15-P024",
+          "name": "AlpenPower Cluster Dextrin / HBCD",
+          "min": 25,
+          "max": 25,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-bulk-plus",
+          "name": "Bulk Plus",
+          "min": null,
+          "max": null,
+          "optional": false,
+          "explanation": "Quelle: ½ Herstellerportion. Grammgewicht einer ganzen Portion fehlt; hier die belegte Grammmenge für ½ Portion eintragen. Nicht mit Bulk Elektrolytpulver P001 gleichsetzen."
+        },
+        {
+          "productId": "workout-citrullin",
+          "name": "Citrullin (Produkt noch zu belegen)",
+          "min": 6,
+          "max": 8,
+          "optional": true,
+          "explanation": "In der Endfassung der Quelle optional. Produktzusammensetzung noch offen; Citrullin und Citrullin-Malat nicht gleichsetzen."
+        },
+        {
+          "productId": "workout-arginin",
+          "name": "Vorhandenes Arginin (Produkt noch zu belegen)",
+          "min": 2,
+          "max": 3,
+          "optional": true,
+          "explanation": "Quelle nennt Pulvermenge; genaue Produktidentität fehlt."
+        }
+      ],
+      "notes": [
+        "Citrullin/Arginin sind gemäß Endfassung optionale Zusätze. Bulk-Plus-Menge muss vor dem Speichern in Gramm belegt werden."
+      ]
+    },
+    {
+      "id": "pre-volume",
+      "name": "PRE-STRENGTH VOLUME",
+      "group": "Pre-Workout",
+      "source": "Pre-Workout-Master-Matrix.docx · Titel im Dokument: Pre-Workout-Master-Matrix 1.4",
+      "water": [
+        500,
+        600
+      ],
+      "items": [
+        {
+          "productId": "master15-P024",
+          "name": "AlpenPower Cluster Dextrin / HBCD",
+          "min": 30,
+          "max": 35,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-bulk-plus",
+          "name": "Bulk Plus",
+          "min": null,
+          "max": null,
+          "optional": false,
+          "explanation": "Quelle: ½ Herstellerportion. Grammgewicht einer ganzen Portion fehlt; hier die belegte Grammmenge für ½ Portion eintragen. Nicht mit Bulk Elektrolytpulver P001 gleichsetzen."
+        },
+        {
+          "productId": "workout-citrullin",
+          "name": "Citrullin (Produkt noch zu belegen)",
+          "min": 8,
+          "max": 8,
+          "optional": true,
+          "explanation": "In der Endfassung der Quelle optional. Produktzusammensetzung noch offen; Citrullin und Citrullin-Malat nicht gleichsetzen."
+        },
+        {
+          "productId": "workout-arginin",
+          "name": "Vorhandenes Arginin (Produkt noch zu belegen)",
+          "min": 2,
+          "max": 3,
+          "optional": true,
+          "explanation": "Quelle nennt Pulvermenge; genaue Produktidentität fehlt."
+        }
+      ],
+      "notes": [
+        "Mengenbereich 30–35 g HBCD. Bulk-Plus-Menge muss vor dem Speichern in Gramm belegt werden."
+      ]
+    },
+    {
+      "id": "pre-arginin",
+      "name": "ARGININ PRE-WORKOUT",
+      "group": "Pre-Workout",
+      "source": "Pre-Workout-Master-Matrix.docx · Titel im Dokument: Pre-Workout-Master-Matrix 1.4",
+      "water": [
+        500,
+        500
+      ],
+      "items": [
+        {
+          "productId": "master15-P024",
+          "name": "AlpenPower Cluster Dextrin / HBCD",
+          "min": 20,
+          "max": 25,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-arginin",
+          "name": "Vorhandenes Arginin (Produkt noch zu belegen)",
+          "min": 3,
+          "max": 4,
+          "optional": false,
+          "explanation": "Quelle nennt Pulvermenge; genaue Produktidentität fehlt."
+        },
+        {
+          "productId": "master15-P003",
+          "name": "MINAID Salty Raw",
+          "min": 0.9,
+          "max": 0.9,
+          "optional": false,
+          "explanation": ""
+        }
+      ],
+      "notes": [
+        "MINAID-Variante aus Abschnitt 11. Alternative ½ Portion Bulk Plus wird nicht als grammgleicher Ersatz verwendet."
+      ]
+    },
+    {
+      "id": "bike-banana",
+      "name": "BIKE – Classic Banana",
+      "group": "Bike-to-Work",
+      "source": "Bike-to-Work-Matrix 1.4.docx",
+      "water": [
+        100,
+        150
+      ],
+      "items": [
+        {
+          "productId": "master15-P009",
+          "name": "Alnatura Rote-Bete-Direktsaft",
+          "min": 250,
+          "max": 250,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-ja-quark",
+          "name": "ja! Magerquark",
+          "min": 100,
+          "max": 100,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P013",
+          "name": "vom Achterhof Bio Protein Mix Rote Beeren",
+          "min": 15,
+          "max": 15,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-salz",
+          "name": "Salz",
+          "min": 0.5,
+          "max": 0.5,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "banana",
+          "name": "Banane",
+          "min": 50,
+          "max": 50,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P023",
+          "name": "Bulk Maltodextrin – optionales Performance-Modul",
+          "min": 10,
+          "max": 20,
+          "optional": true,
+          "explanation": ""
+        }
+      ],
+      "notes": [
+        "Quelle: Pre-Ride-Shake etwa 30 Minuten vor 17 km Radfahrt. Inulin, Baobab und Samen gehören hier nicht zur festen Basis.",
+        "Die Quelle nennt geschätzte Gesamtnährwerte, aber keine vollständigen Produktwerte. Diese Schätzungen werden nicht als berechnete Ergebnisse verwendet."
+      ]
+    },
+    {
+      "id": "bike-blueberry",
+      "name": "BIKE – Blueberry Beet",
+      "group": "Bike-to-Work",
+      "source": "Bike-to-Work-Matrix 1.4.docx",
+      "water": [
+        100,
+        150
+      ],
+      "items": [
+        {
+          "productId": "master15-P009",
+          "name": "Alnatura Rote-Bete-Direktsaft",
+          "min": 250,
+          "max": 250,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-ja-quark",
+          "name": "ja! Magerquark",
+          "min": 100,
+          "max": 100,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P013",
+          "name": "vom Achterhof Bio Protein Mix Rote Beeren",
+          "min": 15,
+          "max": 15,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-salz",
+          "name": "Salz",
+          "min": 0.5,
+          "max": 0.5,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "banana",
+          "name": "Banane",
+          "min": 25,
+          "max": 25,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-heidelbeere",
+          "name": "Heidelbeeren",
+          "min": 50,
+          "max": 50,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P023",
+          "name": "Bulk Maltodextrin – optionales Performance-Modul",
+          "min": 10,
+          "max": 20,
+          "optional": true,
+          "explanation": ""
+        }
+      ],
+      "notes": [
+        "Quelle: Pre-Ride-Shake etwa 30 Minuten vor 17 km Radfahrt. Inulin, Baobab und Samen gehören hier nicht zur festen Basis.",
+        "Die Quelle nennt geschätzte Gesamtnährwerte, aber keine vollständigen Produktwerte. Diese Schätzungen werden nicht als berechnete Ergebnisse verwendet."
+      ]
+    },
+    {
+      "id": "bike-cherry",
+      "name": "BIKE – Cherry Beet",
+      "group": "Bike-to-Work",
+      "source": "Bike-to-Work-Matrix 1.4.docx",
+      "water": [
+        100,
+        150
+      ],
+      "items": [
+        {
+          "productId": "master15-P009",
+          "name": "Alnatura Rote-Bete-Direktsaft",
+          "min": 250,
+          "max": 250,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-ja-quark",
+          "name": "ja! Magerquark",
+          "min": 100,
+          "max": 100,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P013",
+          "name": "vom Achterhof Bio Protein Mix Rote Beeren",
+          "min": 15,
+          "max": 15,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-salz",
+          "name": "Salz",
+          "min": 0.5,
+          "max": 0.5,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "recovery29-F2",
+          "name": "Sauerkirschen",
+          "min": 75,
+          "max": 75,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P023",
+          "name": "Bulk Maltodextrin – optionales Performance-Modul",
+          "min": 10,
+          "max": 20,
+          "optional": true,
+          "explanation": ""
+        }
+      ],
+      "notes": [
+        "Quelle: Pre-Ride-Shake etwa 30 Minuten vor 17 km Radfahrt. Inulin, Baobab und Samen gehören hier nicht zur festen Basis.",
+        "Die Quelle nennt geschätzte Gesamtnährwerte, aber keine vollständigen Produktwerte. Diese Schätzungen werden nicht als berechnete Ergebnisse verwendet."
+      ]
+    },
+    {
+      "id": "bike-strawberry",
+      "name": "BIKE – Strawberry Light",
+      "group": "Bike-to-Work",
+      "source": "Bike-to-Work-Matrix 1.4.docx",
+      "water": [
+        100,
+        150
+      ],
+      "items": [
+        {
+          "productId": "master15-P009",
+          "name": "Alnatura Rote-Bete-Direktsaft",
+          "min": 250,
+          "max": 250,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-ja-quark",
+          "name": "ja! Magerquark",
+          "min": 100,
+          "max": 100,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P013",
+          "name": "vom Achterhof Bio Protein Mix Rote Beeren",
+          "min": 15,
+          "max": 15,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-salz",
+          "name": "Salz",
+          "min": 0.5,
+          "max": 0.5,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "recovery29-F5",
+          "name": "Erdbeeren",
+          "min": 100,
+          "max": 100,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P023",
+          "name": "Bulk Maltodextrin – optionales Performance-Modul",
+          "min": 10,
+          "max": 20,
+          "optional": true,
+          "explanation": ""
+        }
+      ],
+      "notes": [
+        "Quelle: Pre-Ride-Shake etwa 30 Minuten vor 17 km Radfahrt. Inulin, Baobab und Samen gehören hier nicht zur festen Basis.",
+        "Die Quelle nennt geschätzte Gesamtnährwerte, aber keine vollständigen Produktwerte. Diese Schätzungen werden nicht als berechnete Ergebnisse verwendet."
+      ]
+    },
+    {
+      "id": "bike-pineapple",
+      "name": "BIKE – Pineapple Fresh",
+      "group": "Bike-to-Work",
+      "source": "Bike-to-Work-Matrix 1.4.docx",
+      "water": [
+        150,
+        200
+      ],
+      "items": [
+        {
+          "productId": "master15-P009",
+          "name": "Alnatura Rote-Bete-Direktsaft",
+          "min": 250,
+          "max": 250,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-ja-quark",
+          "name": "ja! Magerquark",
+          "min": 100,
+          "max": 100,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P013",
+          "name": "vom Achterhof Bio Protein Mix Rote Beeren",
+          "min": 15,
+          "max": 15,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-salz",
+          "name": "Salz",
+          "min": 0.5,
+          "max": 0.5,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-ananas",
+          "name": "Ananas",
+          "min": 75,
+          "max": 75,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P023",
+          "name": "Bulk Maltodextrin – optionales Performance-Modul",
+          "min": 10,
+          "max": 20,
+          "optional": true,
+          "explanation": ""
+        }
+      ],
+      "notes": [
+        "Quelle: Pre-Ride-Shake etwa 30 Minuten vor 17 km Radfahrt. Inulin, Baobab und Samen gehören hier nicht zur festen Basis.",
+        "Die Quelle nennt geschätzte Gesamtnährwerte, aber keine vollständigen Produktwerte. Diese Schätzungen werden nicht als berechnete Ergebnisse verwendet."
+      ]
+    },
+    {
+      "id": "bike-mango",
+      "name": "BIKE – Mango Beet",
+      "group": "Bike-to-Work",
+      "source": "Bike-to-Work-Matrix 1.4.docx",
+      "water": [
+        100,
+        150
+      ],
+      "items": [
+        {
+          "productId": "master15-P009",
+          "name": "Alnatura Rote-Bete-Direktsaft",
+          "min": 250,
+          "max": 250,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-ja-quark",
+          "name": "ja! Magerquark",
+          "min": 100,
+          "max": 100,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P013",
+          "name": "vom Achterhof Bio Protein Mix Rote Beeren",
+          "min": 15,
+          "max": 15,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-salz",
+          "name": "Salz",
+          "min": 0.5,
+          "max": 0.5,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "recovery29-F4",
+          "name": "Mango",
+          "min": 60,
+          "max": 60,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P023",
+          "name": "Bulk Maltodextrin – optionales Performance-Modul",
+          "min": 10,
+          "max": 20,
+          "optional": true,
+          "explanation": ""
+        }
+      ],
+      "notes": [
+        "Quelle: Pre-Ride-Shake etwa 30 Minuten vor 17 km Radfahrt. Inulin, Baobab und Samen gehören hier nicht zur festen Basis.",
+        "Die Quelle nennt geschätzte Gesamtnährwerte, aber keine vollständigen Produktwerte. Diese Schätzungen werden nicht als berechnete Ergebnisse verwendet.",
+        "Quelle nennt 40–50 g Mango als zusätzliche Testvariante; hier ist das Standardrezept mit 60 g hinterlegt."
+      ]
+    },
+    {
+      "id": "bike-watermelon",
+      "name": "BIKE – Watermelon Fresh",
+      "group": "Bike-to-Work",
+      "source": "Bike-to-Work-Matrix 1.4.docx",
+      "water": [
+        50,
+        100
+      ],
+      "items": [
+        {
+          "productId": "master15-P009",
+          "name": "Alnatura Rote-Bete-Direktsaft",
+          "min": 250,
+          "max": 250,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-ja-quark",
+          "name": "ja! Magerquark",
+          "min": 100,
+          "max": 100,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P013",
+          "name": "vom Achterhof Bio Protein Mix Rote Beeren",
+          "min": 15,
+          "max": 15,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-salz",
+          "name": "Salz",
+          "min": 0.5,
+          "max": 0.5,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "workout-wassermelone",
+          "name": "Wassermelone",
+          "min": 125,
+          "max": 125,
+          "optional": false,
+          "explanation": ""
+        },
+        {
+          "productId": "master15-P023",
+          "name": "Bulk Maltodextrin – optionales Performance-Modul",
+          "min": 10,
+          "max": 20,
+          "optional": true,
+          "explanation": ""
+        }
+      ],
+      "notes": [
+        "Quelle: Pre-Ride-Shake etwa 30 Minuten vor 17 km Radfahrt. Inulin, Baobab und Samen gehören hier nicht zur festen Basis.",
+        "Die Quelle nennt geschätzte Gesamtnährwerte, aber keine vollständigen Produktwerte. Diese Schätzungen werden nicht als berechnete Ergebnisse verwendet."
+      ]
+    }
+  ]
+}

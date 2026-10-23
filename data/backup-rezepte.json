@@ -1,0 +1,488 @@
+{
+  "schema": 1,
+  "products": [
+    {
+      "id": "almond",
+      "name": "Allos Mandel 0 %",
+      "unit": "ml",
+      "values": {
+        "k": 27,
+        "p": 0.8,
+        "c": 0,
+        "f": 2.5,
+        "b": 0.6,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      }
+    },
+    {
+      "id": "whey",
+      "name": "RheinNatur Whey Isolat",
+      "unit": "g",
+      "values": {
+        "k": 370,
+        "p": 91,
+        "c": 3.1,
+        "f": 0.5,
+        "b": 0,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      }
+    },
+    {
+      "id": "casein",
+      "name": "HSN Micellar Casein RAW",
+      "unit": "g",
+      "values": {
+        "k": 360,
+        "p": 90,
+        "c": 3,
+        "f": 1.5,
+        "b": 0,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      }
+    },
+    {
+      "id": "vegan",
+      "name": "FEMNA Her Protein Neutral",
+      "unit": "g",
+      "values": {
+        "k": 370,
+        "p": 86.1,
+        "c": 4,
+        "f": 3,
+        "b": 0,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      }
+    },
+    {
+      "id": "skyr",
+      "name": "REWE Bio Skyr Natur",
+      "unit": "g",
+      "values": {
+        "k": 63,
+        "p": 11,
+        "c": 4,
+        "f": 0.2,
+        "b": 0,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      }
+    },
+    {
+      "id": "quark",
+      "name": "Magerquark",
+      "unit": "g",
+      "values": {
+        "k": 67,
+        "p": 12,
+        "c": 4,
+        "f": 0.2,
+        "b": 0,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      }
+    },
+    {
+      "id": "oats",
+      "name": "dennree Haferflocken",
+      "unit": "g",
+      "values": {
+        "k": 370,
+        "p": 13,
+        "c": 60,
+        "f": 7,
+        "b": 10,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      }
+    },
+    {
+      "id": "rasp",
+      "name": "TK-Himbeeren",
+      "unit": "g",
+      "values": {
+        "k": 43,
+        "p": 1.2,
+        "c": 5,
+        "f": 0.7,
+        "b": 6.5,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      }
+    },
+    {
+      "id": "cherry",
+      "name": "TK-Sauerkirschen",
+      "unit": "g",
+      "values": {
+        "k": 55,
+        "p": 1,
+        "c": 12,
+        "f": 0.3,
+        "b": 1.5,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      }
+    },
+    {
+      "id": "spinach",
+      "name": "Spinat",
+      "unit": "g",
+      "values": {
+        "k": 25,
+        "p": 3,
+        "c": 1,
+        "f": 0.4,
+        "b": 2.5,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      }
+    },
+    {
+      "id": "beet",
+      "name": "Rote Bete gegart",
+      "unit": "g",
+      "values": {
+        "k": 43,
+        "p": 1.6,
+        "c": 8,
+        "f": 0.2,
+        "b": 2.8,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      }
+    },
+    {
+      "id": "banana",
+      "name": "Banane",
+      "unit": "g",
+      "values": {
+        "k": 90,
+        "p": 1,
+        "c": 20,
+        "f": 0.3,
+        "b": 2,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      }
+    },
+    {
+      "id": "hemp",
+      "name": "Geschälte Hanfsamen",
+      "unit": "g",
+      "values": {
+        "k": 560,
+        "p": 32,
+        "c": 4,
+        "f": 49,
+        "b": 4,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      }
+    },
+    {
+      "id": "flax",
+      "name": "Geschrotete Leinsamen",
+      "unit": "g",
+      "values": {
+        "k": 500,
+        "p": 18,
+        "c": 2,
+        "f": 42,
+        "b": 27,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "r0",
+      "name": "A – Beeren-Whey",
+      "ingredients": [
+        {
+          "productId": "almond",
+          "amount": 200
+        },
+        {
+          "productId": "whey",
+          "amount": 30
+        },
+        {
+          "productId": "oats",
+          "amount": 20
+        },
+        {
+          "productId": "rasp",
+          "amount": 100
+        },
+        {
+          "productId": "flax",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "id": "r1",
+      "name": "B – Sauerkirsch-Casein",
+      "ingredients": [
+        {
+          "productId": "almond",
+          "amount": 200
+        },
+        {
+          "productId": "casein",
+          "amount": 30
+        },
+        {
+          "productId": "oats",
+          "amount": 25
+        },
+        {
+          "productId": "cherry",
+          "amount": 100
+        },
+        {
+          "productId": "hemp",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "C – Skyr-Sport",
+      "ingredients": [
+        {
+          "productId": "almond",
+          "amount": 150
+        },
+        {
+          "productId": "skyr",
+          "amount": 150
+        },
+        {
+          "productId": "whey",
+          "amount": 20
+        },
+        {
+          "productId": "oats",
+          "amount": 35
+        },
+        {
+          "productId": "rasp",
+          "amount": 100
+        },
+        {
+          "productId": "flax",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "D – Vegan-Beeren",
+      "ingredients": [
+        {
+          "productId": "almond",
+          "amount": 250
+        },
+        {
+          "productId": "vegan",
+          "amount": 30
+        },
+        {
+          "productId": "oats",
+          "amount": 30
+        },
+        {
+          "productId": "rasp",
+          "amount": 100
+        },
+        {
+          "productId": "hemp",
+          "amount": 12
+        },
+        {
+          "productId": "flax",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "name": "E – Grüner Protein-Shake",
+      "ingredients": [
+        {
+          "productId": "almond",
+          "amount": 200
+        },
+        {
+          "productId": "whey",
+          "amount": 30
+        },
+        {
+          "productId": "spinach",
+          "amount": 80
+        },
+        {
+          "productId": "banana",
+          "amount": 50
+        },
+        {
+          "productId": "oats",
+          "amount": 25
+        },
+        {
+          "productId": "flax",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "id": "r5",
+      "name": "F – Rote-Bete-Quark",
+      "ingredients": [
+        {
+          "productId": "almond",
+          "amount": 200
+        },
+        {
+          "productId": "quark",
+          "amount": 150
+        },
+        {
+          "productId": "whey",
+          "amount": 15
+        },
+        {
+          "productId": "beet",
+          "amount": 100
+        },
+        {
+          "productId": "oats",
+          "amount": 25
+        },
+        {
+          "productId": "hemp",
+          "amount": 10
+        }
+      ]
+    }
+  ],
+  "source": "Quelle: bereitgestelltes shake-builder-backup.json, Schema 1. Nährwerte nicht durch Originalbelege verifiziert; null bedeutet unbekannt. Keine gesicherte Zuordnung der Backup-Rezepte zu Formula 1.1 oder Recovery 2.9."
+}

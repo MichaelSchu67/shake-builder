@@ -1,0 +1,20 @@
+const assert=require('node:assert/strict');
+const {validate,merge}=require('../import-core.js');
+const original=require('../data/original-backup.json');
+const copy=x=>structuredClone(x);
+assert.equal(validate(original).products.length,14);
+assert.equal(original.recipes.length,6);
+assert.deepEqual(merge(original,original).result,original);
+const local=copy(original);local.products[0].values.k=99;
+const before=JSON.stringify(local),plan=merge(local,original);
+assert.equal(JSON.stringify(local),before);
+assert.equal(plan.result.products.length,15);
+assert.equal(plan.result.products[0].values.k,99);
+assert.equal(plan.result.recipes.find(r=>r.id==='r0-import-1').ingredients[0].productId,'almond-import-1');
+assert.deepEqual(merge(plan.result,original).result,plan.result);
+const occupied=copy(local);occupied.products.push({...copy(original.products[1]),id:'almond-import-1'});
+assert(merge(occupied,original).result.products.some(p=>p.id==='almond-import-2'));
+for(const mutation of [d=>d.schema=2,d=>d.products.push(d.products[0]),d=>d.products[0].values.k=-1,d=>d.products[0].values.k='27',d=>d.recipes[0].ingredients[0].amount=null,d=>d.recipes[0].ingredients[0].productId='missing',d=>d.recipes.push(d.recipes[0])]){const d=copy(original);mutation(d);assert.throws(()=>validate(d));}
+assert.equal(merge({products:[],recipes:[]},original).result.products[0].values.ca,null);
+assert.equal(merge(original,{schema:1,products:[],recipes:[]}).rows.length,0);
+console.log('Importtests bestanden.');

@@ -1,9 +1,9 @@
-# Shake Builder PWA 0.3
+# Shake Builder PWA 0.3.1
 
 ## Update auf GitHub Pages
 1. In der bisherigen App auf jedem Gerät unter Sicherung eine JSON-Datei exportieren.
 2. ZIP entpacken und seinen Inhalt in die Wurzel des bisherigen Repositorys MichaelSchu67/shake-builder übernehmen. Bestehende Pages-Adresse und Browserprofil beibehalten. Kein zusätzlicher Unterordner.
-3. Die bisherige GitHub-Pages-Adresse öffnen. Nach dem ersten Laden die App ganz schließen und erneut öffnen, bis in der Kopfzeile PWA 0.3 steht. Bei Bedarf im Browser neu laden. Browserdaten nicht löschen.
+3. Die bisherige GitHub-Pages-Adresse öffnen. Nach dem ersten Laden die App ganz schließen und erneut öffnen, bis in der Kopfzeile PWA 0.3.1 steht. Bei Bedarf im Browser neu laden. Browserdaten nicht löschen.
 4. Vorhandene lokale Rezepte und Produkte bleiben erhalten. Der Speicherschlüssel wird beibehalten. Es erfolgt kein automatischer Produktimport.
 
 ## Recovery-Rezepte erstellen
@@ -51,3 +51,9 @@ GitHub Pages liefert die App über HTTPS. Android/Chrome: Menü → App installi
 - Syntax- und Paketdateiprüfungen.
 
 Die Tests verwenden simulierte Oberflächen und prüfen Berechnungen und Speicherung. Der echte Browser konnte die lokale Vorschau in dieser Sitzung nicht erreichen. Eine visuelle Browserprüfung sowie Installation und Offline-Neustart auf PC/Tablet sind deshalb nach Veröffentlichung noch erforderlich. Es wurde nichts automatisch auf GitHub veröffentlicht.
+
+## Änderungen in 0.3.1
+
+Recovery-Auswahllisten zeigen passende Produktkategorien: Proteinprodukte, Früchte, Hafer, Kohlenhydratquellen sowie optionale Module. Kohlenhydratquelle ersetzt die bisherige Beschriftung Maltodextrin für das KH-Ziel; auch Cluster Dextrin ist auswählbar. Die Berechnung verwendet den tatsächlichen KH-Gehalt des gewählten Produkts. Die Matrix nennt ursprünglich Maltodextrin; die alternative Produktwahl erfolgt durch den Nutzer.
+
+Bekannte Produkte aus Backup, Master 1.5 und Matrix-Früchten werden anhand ihrer bestehenden IDs zugeordnet. Unbekannte eigene Produkte bleiben unter Sonstiges. Unter Produkte → Kategorie für den Recovery-Baukasten kann die Zuordnung gespeichert oder korrigiert werden. Dafür ist kein Neuimport erforderlich. Kategorien bleiben im JSON-Backup erhalten. Die normale Produktübersicht und der freie Rezepteditor zeigen weiterhin alle Produkte alphabetisch. Im Recovery-Baukasten werden für Protein, Frucht, Hafer und KH-Quelle Produkte mit Einheit g unterstützt. Für Säfte im PP-Modul ist auch ml möglich.

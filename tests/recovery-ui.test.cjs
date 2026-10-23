@@ -14,3 +14,25 @@ const reload=session(JSON.stringify(saved));assert(!reload.alerts.length);assert
 const names=s.get('productSelect').children.map(o=>o.textContent);assert.deepEqual(names,[...names].sort((a,b)=>a.localeCompare(b,'de',{sensitivity:'base',numeric:true})));
 s.get('recoveryProtein').value='';s.run('updateRecovery()');assert.equal(s.get('saveRecovery').disabled,true);
 console.log('Recovery-Oberflächenabläufe bestanden: Auswahl, Speichern, erneutes Laden, Produktreihenfolge, fehlendes Produkt.');
+const roles={recoveryProtein:'protein',recoveryFruit:'fruit',recoveryOats:'oats',recoveryMalto:'carbs',recoveryElectrolyte:'electrolytes',recoveryCreatine:'creatine'};
+const {category,build}=require('../recovery-core');
+for(const [id,role] of Object.entries(roles)){
+ const options=s.get(id).children.filter(o=>o.value);
+ assert(options.length>0,id);
+ for(const o of options)assert.equal(category(data.products.find(p=>p.id===o.value)),role,id);
+}
+assert(s.get('recoveryMalto').children.some(o=>o.value==='master15-P024'),'Cluster Dextrin must be selectable');
+assert(!s.get('recoveryProtein').children.some(o=>o.value==='almond'));
+assert(!s.get('recoveryFruit').children.some(o=>o.value==='master15-P012'));
+const config={...saved.recipes[6].recovery.config,maltoId:'master15-P024'};
+const cluster=build(data.products,config);assert.deepEqual(cluster.errors,[]);assert(Math.abs(cluster.totals.c-50)<1e-9);
+const custom={id:'custom-fruit',name:'Neue Frucht',unit:'g',values:{c:10},category:'fruit'};
+s.run('db.products.push('+JSON.stringify(custom)+');renderRecovery()');
+assert(s.get('recoveryFruit').children.some(o=>o.value===custom.id));
+assert(!s.get('recoveryProtein').children.some(o=>o.value===custom.id));
+s.run('pid="custom-fruit";renderProducts()');s.get('productCategory').value='carbs';s.get('saveProduct').onclick();
+const persisted=JSON.parse(s.data.get('sporternaehrung-shake-builder-v01'));
+assert.equal(persisted.products.find(p=>p.id===custom.id).category,'carbs');
+const again=session(JSON.stringify(persisted));assert.equal(again.run('Recovery.category(db.products.find(p=>p.id==="custom-fruit"))'),'carbs');
+s.run('renderRecovery()');assert(!s.get('recoveryFruit').children.some(o=>o.value===custom.id));assert(s.get('recoveryMalto').children.some(o=>o.value===custom.id));
+console.log('Kategoriefilter, Cluster-Dextrin-Berechnung und gespeicherte Kategorieänderung geprüft.');

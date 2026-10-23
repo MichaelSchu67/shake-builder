@@ -2,6 +2,24 @@
 (function(root){
 const stages={R0:{name:'Basic',water:[400,500],fruit:[100,100]},R1:{name:'Balance',water:[450,600],fruit:[100,100],oats:[25,30]},R2:{name:'Strength',water:[450,600],fruit:[100,100],oats:[25,25]},R3:{name:'Performance',water:[500,600],fruit:[100,100],carbs:50},R4:{name:'Endurance',water:[600,750],fruit:[100,100],carbs:70},R5:{name:'Rapid',water:[700,800],fruit:[0,50],carbs:85},R6:{name:'Late',water:[400,500],fruit:[0,50],carbs:25}};
 const sorted=items=>[...items].sort((a,b)=>a.name.localeCompare(b.name,'de',{sensitivity:'base',numeric:true})||a.id.localeCompare(b.id));
+const categories={protein:'Proteinprodukt',fruit:'Frucht',oats:'Hafer / Haferpulver',carbs:'Kohlenhydratquelle (z. B. Maltodextrin, Cluster Dextrin)',electrolytes:'Elektrolyte',creatine:'Kreatin',polyphenol:'Polyphenolprodukt / Saft',other:'Sonstiges'};
+function category(p){
+ if(Object.hasOwn(categories,p.category))return p.category;
+ const id=p.id.replace(/-import-\d+$/,'');
+ if(/^recovery29-F[1-5]$/.test(id)||['rasp','cherry','banana'].includes(id))return 'fruit';
+ if(['whey','casein','vegan'].includes(id))return 'protein';
+ if(id==='oats')return 'oats';
+ const master=/^master15-(P\d+)$/.exec(id)?.[1];
+ if(['P010','P012','P013','P018','P019','P020'].includes(master))return 'protein';
+ if(master==='P011')return 'oats';
+ if(['P023','P024'].includes(master))return 'carbs';
+ if(['P001','P002','P003','P025'].includes(master))return 'electrolytes';
+ if(master==='P014')return 'creatine';
+ if(master==='P017')return 'polyphenol';
+ // Unknown products stay unassigned until the user explicitly categorises them.
+ return 'other';
+}
+const forCategory=(products,role)=>sorted(products.filter(p=>category(p)===role&&(role==='polyphenol'||p.unit==='g')));
 function build(products,c){
  const stage=stages[c.stage];if(!stage)throw Error('Recovery-Stufe fehlt.');
  const ingredients=[],errors=[],notes=[];
@@ -51,11 +69,11 @@ function build(products,c){
  if(stage.carbs){
   if(unknown.length)errors.push('KH-Ziel nicht berechenbar: Kohlenhydrate fehlen für '+unknown.join(', ')+'.');
   else if(knownCarbs>stage.carbs+1e-9)errors.push('Zutaten überschreiten das KH-Ziel bereits. Mengen oder Produkte anpassen.');
-  else if(stage.carbs-knownCarbs>1e-9){const p=get(c.maltoId,'Maltodextrin'),v=p?.values?.c;if(typeof v!=='number'||v<=0||!Number.isFinite(v))errors.push('Kohlenhydratgehalt von Maltodextrin fehlt.');else{malto=(stage.carbs-knownCarbs)*100/v;add(p,malto);}}
- }else if(c.stage==='R2'&&quantity(c.strengthMalto,'Maltodextrin',0,15)&&c.strengthMalto>0){malto=c.strengthMalto;add(get(c.maltoId,'Maltodextrin'),malto);}
+  else if(stage.carbs-knownCarbs>1e-9){const p=get(c.maltoId,'Kohlenhydratquelle'),v=p?.values?.c;if(typeof v!=='number'||v<=0||!Number.isFinite(v))errors.push('Kohlenhydratgehalt der Kohlenhydratquelle fehlt.');else{malto=(stage.carbs-knownCarbs)*100/v;add(p,malto);}}
+ }else if(c.stage==='R2'&&quantity(c.strengthMalto,'Kohlenhydratquelle',0,15)&&c.strengthMalto>0){malto=c.strengthMalto;add(get(c.maltoId,'Kohlenhydratquelle'),malto);}
  const totals={};for(const key of ['k','p','c','f','b']){let sum=0,known=true;for(const i of ingredients){const v=products.find(p=>p.id===i.productId)?.values?.[key];if(typeof v!=='number'||!Number.isFinite(v))known=false;else sum+=v*i.amount/100;}totals[key]=known?sum:null;}
  notes.push('Quelle: Recovery-Master-Matrix 2.9. Produktwerte gemäß gewählten Datensätzen; fehlende Werte bleiben unbekannt. Wasser wird separat gespeichert.');
  return {ingredients,errors:[...new Set(errors)],notes,totals,malto,powder,waterMl:c.waterMl,target:stage.carbs??null,name:c.stage+' – '+stage.name+' · '+(protein?.name||'Proteinbasis')};
 }
-root.Recovery={stages,sorted,build};if(typeof module!=='undefined')module.exports=root.Recovery;
+root.Recovery={stages,sorted,categories,category,forCategory,build};if(typeof module!=='undefined')module.exports=root.Recovery;
 })(globalThis);

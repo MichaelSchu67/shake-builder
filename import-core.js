@@ -9,6 +9,7 @@ function validate(d, legacy=false){
  for(const p of d.products){
   if(!p||!text(p.id)||!text(p.name)||ids.has(p.id)||!['g','ml'].includes(p.unit)||!p.values||Array.isArray(p.values)||typeof p.values!=='object')throw Error('Ungültiges Produkt oder doppelte Produkt-ID.');
   ids.add(p.id);
+  if(p.category!==undefined&&!['protein','fruit','oats','carbs','electrolytes','creatine','polyphenol','other'].includes(p.category))throw Error('Ungültige Produktkategorie.');
   for(const [k,v] of Object.entries(p.values))if(!keys.includes(k)||(v!==null&&(typeof v!=='number'||!Number.isFinite(v)||v<0)))throw Error('Ungültiger Nährwert: '+k);
  }
  for(const r of d.recipes){
@@ -19,7 +20,7 @@ function validate(d, legacy=false){
  }
  return d;
 }
-const productBody=p=>JSON.stringify([p.name,p.unit,keys.map(k=>p.values[k]??null)]);
+const productBody=p=>JSON.stringify([p.name,p.unit,keys.map(k=>p.values[k]??null),p.category??null]);
 const recipeBody=r=>JSON.stringify([r.name,r.ingredients,r.recovery??null]);
 function merge(existing,incoming){
  validate(incoming); validate({...existing,schema:1});

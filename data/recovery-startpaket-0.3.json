@@ -1,0 +1,847 @@
+{
+  "schema": 1,
+  "source": "Master-Produktdatenbank 1.5: 22 Produkte. Vorrang für explizite 100-g-Angaben im Blatt Nährwerte; interne Abweichungen und Grenzwerte siehe Begleithinweise. Bestehende Produkte bleiben erhalten. Zusätzlich fünf Fruchtvarianten mit Teilwerten aus Recovery-Master-Matrix 2.9, Abschnitt 8; keine Überschreibung bisheriger Früchte.",
+  "products": [
+    {
+      "id": "master15-P001",
+      "name": "Bulk Elektrolytpulver",
+      "unit": "g",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": null,
+        "f": null,
+        "b": null,
+        "ca": 9200,
+        "mg": 1500,
+        "pot": 15300,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 2,
+        "declaredSource": "Bulk Elektrolytpulver.docx",
+        "quality": null,
+        "mineralRow": 2
+      },
+      "notes": "Portion 2 g"
+    },
+    {
+      "id": "master15-P002",
+      "name": "InnoNature Elektrolyte Drink auf Basis von Kokosnusswasser",
+      "unit": "g",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": null,
+        "f": null,
+        "b": null,
+        "ca": null,
+        "mg": 480,
+        "pot": 4420,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 3,
+        "declaredSource": "Innonature Elektrolyte Drink auf Basis von Kokosnusswasser.docx",
+        "quality": null,
+        "nutrientRow": 2,
+        "nutrientComment": "< Angaben als Grenzwert erfasst",
+        "mineralRow": 3
+      },
+      "notes": "225 g = 15 Portionen"
+    },
+    {
+      "id": "master15-P003",
+      "name": "MINAID Electrolyte Drink Mix Salty Raw",
+      "unit": "g",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": null,
+        "f": null,
+        "b": null,
+        "ca": null,
+        "mg": 2500,
+        "pot": 8333.333333333334,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 4,
+        "declaredSource": "MINAID Electrolyte Drink Mix.docx",
+        "quality": null,
+        "nutrientRow": 3,
+        "nutrientComment": "< Angaben als Grenzwert erfasst",
+        "mineralRow": 4
+      },
+      "notes": ""
+    },
+    {
+      "id": "master15-P004",
+      "name": "HSN Kaliumcitrat-Pulver",
+      "unit": "g",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": null,
+        "f": null,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": 36046.66666666667,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 5,
+        "declaredSource": "HSN Kaliumcitrat.docx",
+        "quality": null,
+        "mineralRow": 5
+      },
+      "notes": "100 Portionen"
+    },
+    {
+      "id": "master15-P005",
+      "name": "Trinatriumcitrat E331 Dihydrat",
+      "unit": "g",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": null,
+        "f": null,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 6,
+        "declaredSource": "frühere Angabe",
+        "quality": null
+      },
+      "notes": "Lebensmittelqualität; Dihydrat"
+    },
+    {
+      "id": "master15-P006",
+      "name": "4Endurance Pro Flex",
+      "unit": "g",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": null,
+        "f": null,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 7,
+        "declaredSource": "frühere Produktangaben",
+        "quality": null
+      },
+      "notes": ""
+    },
+    {
+      "id": "master15-P009",
+      "name": "Alnatura Bio Rote Bete Saft",
+      "unit": "ml",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": null,
+        "f": null,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 10,
+        "declaredSource": "frühere Produktangaben",
+        "quality": null
+      },
+      "notes": "98–98,8 % Rote-Bete-Saft; Nitrat nicht deklariert"
+    },
+    {
+      "id": "master15-P010",
+      "name": "AlpenPower BIO Whey Protein Heidelbeere",
+      "unit": "g",
+      "values": {
+        "k": 391,
+        "p": 72,
+        "c": 8.5,
+        "f": 5.5,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 11,
+        "declaredSource": "Nutzerangabe / Herstelleretikett",
+        "quality": "A – Herstellerangabe",
+        "nutrientRow": 4,
+        "nutrientComment": ""
+      },
+      "notes": "vollständiges Aminosäureprofil"
+    },
+    {
+      "id": "master15-P011",
+      "name": "AlpenPower BIO Haferpulver",
+      "unit": "g",
+      "values": {
+        "k": 370,
+        "p": 11,
+        "c": 59,
+        "f": 6.7,
+        "b": 9.7,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 12,
+        "declaredSource": "Nutzerangabe / Herstelleretikett",
+        "quality": "A – Herstellerangabe",
+        "nutrientRow": 5,
+        "nutrientComment": "Salz <0,1 g"
+      },
+      "notes": "ballaststoffhaltige Kohlenhydratquelle"
+    },
+    {
+      "id": "master15-P012",
+      "name": "AlpenPower Clear Whey Isolat Kirsche",
+      "unit": "g",
+      "values": {
+        "k": 343,
+        "p": 84,
+        "c": 1.4,
+        "f": null,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 13,
+        "declaredSource": "Nutzerangabe / Herstelleretikett",
+        "quality": "A – Herstellerangabe",
+        "nutrientRow": 6,
+        "nutrientComment": "Fett und gesättigt jeweils <0,1 g"
+      },
+      "notes": "vollständiges Aminosäureprofil"
+    },
+    {
+      "id": "master15-P013",
+      "name": "vom Achterhof Bio Protein Mix Rote Beeren",
+      "unit": "g",
+      "values": {
+        "k": 372,
+        "p": 67,
+        "c": 13,
+        "f": 5.3,
+        "b": 13,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 14,
+        "declaredSource": "Nutzerangabe / Herstelleretikett",
+        "quality": "A – Nährwerte / C – Aminosäuren geschätzt",
+        "nutrientRow": 7,
+        "nutrientComment": ""
+      },
+      "notes": "Aminosäureprofil später als Schätzwert"
+    },
+    {
+      "id": "master15-P014",
+      "name": "AlpenPower Pur Creatin",
+      "unit": "g",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": null,
+        "f": null,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 15,
+        "declaredSource": "Nutzerangabe / Herstelleretikett",
+        "quality": "A – Herstellerangabe"
+      },
+      "notes": "3,4 g täglich in 200 ml Flüssigkeit; Creapure®"
+    },
+    {
+      "id": "master15-P015",
+      "name": "4Endurance Nrgy Drink 90",
+      "unit": "g",
+      "values": {
+        "k": 375,
+        "p": 0,
+        "c": 93.8,
+        "f": 0,
+        "b": 0,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 16,
+        "declaredSource": "Nutzerangabe / Herstelleretikett",
+        "quality": "A – Herstellerangabe",
+        "nutrientRow": 8,
+        "nutrientComment": "",
+        "mineralRow": 6
+      },
+      "notes": "90 g KH + Elektrolyte pro Portion"
+    },
+    {
+      "id": "master15-P016",
+      "name": "4Endurance Nrgy Drink 45",
+      "unit": "g",
+      "values": {
+        "k": 375,
+        "p": 0,
+        "c": 93.8,
+        "f": 0,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 17,
+        "declaredSource": "Nutzerangabe / Herstelleretikett",
+        "quality": "A – Herstellerangabe",
+        "nutrientRow": 9,
+        "nutrientComment": "Ballaststoffe nicht angegeben",
+        "mineralRow": 7
+      },
+      "notes": "45 g KH + Elektrolyte pro Portion"
+    },
+    {
+      "id": "master15-P018",
+      "name": "Wahbio Elite Bio Protein Waldbeere",
+      "unit": "g",
+      "values": {
+        "k": 358,
+        "p": 74.8,
+        "c": 11.1,
+        "f": 1.6,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 19,
+        "declaredSource": "Produktetikett / Nutzerfoto",
+        "quality": "A – Herstellerangabe",
+        "nutrientRow": 10,
+        "nutrientComment": "Waldbeere"
+      },
+      "notes": "450 g; vollständiges Aminosäureprofil"
+    },
+    {
+      "id": "master15-P019",
+      "name": "Wahbio Elite Bio Protein Vanille",
+      "unit": "g",
+      "values": {
+        "k": 354,
+        "p": 81.1,
+        "c": 5.9,
+        "f": 1.5,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 20,
+        "declaredSource": "Produktetikett / Nutzerfoto",
+        "quality": "A – Herstellerangabe",
+        "nutrientRow": 11,
+        "nutrientComment": "Vanille"
+      },
+      "notes": "450 g; vollständiges Aminosäureprofil"
+    },
+    {
+      "id": "master15-P020",
+      "name": "Wahbio Elite Bio Protein Pure Protein",
+      "unit": "g",
+      "values": {
+        "k": 359,
+        "p": 81.2,
+        "c": 5,
+        "f": 1.6,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 21,
+        "declaredSource": "Produktetikett / Nutzerfoto",
+        "quality": "A – Herstellerangabe",
+        "nutrientRow": 12,
+        "nutrientComment": "Pure Protein"
+      },
+      "notes": "450 g; vollständiges Aminosäureprofil"
+    },
+    {
+      "id": "master15-P021",
+      "name": "GreatVita MSM Pulver",
+      "unit": "g",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": null,
+        "f": null,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 22,
+        "declaredSource": "Nutzerangabe / Herstelleretikett",
+        "quality": "A – Herstellerangabe",
+        "nutrientRow": 13,
+        "nutrientComment": "Alle Werte <0,01; als Grenzwert 0,01 erfasst"
+      },
+      "notes": "Empfehlung 2 x ca. 1 g täglich; Reinheitsangaben 99,99/99,9 % abweichend"
+    },
+    {
+      "id": "master15-P022",
+      "name": "Bloom Naturals Grassgefüttertes Collagen Pulver",
+      "unit": "g",
+      "values": {
+        "k": 364,
+        "p": 91,
+        "c": 0,
+        "f": 0,
+        "b": 0,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 23,
+        "declaredSource": "Produktetikett / Nutzerfoto",
+        "quality": "A – Herstellerangabe",
+        "nutrientRow": 14,
+        "nutrientComment": ""
+      },
+      "notes": "Kollagenprotein separat von vollständigen Nahrungsproteinen bewerten"
+    },
+    {
+      "id": "master15-P023",
+      "name": "Bulk Maltodextrin",
+      "unit": "g",
+      "values": {
+        "k": 380,
+        "p": 0,
+        "c": 95,
+        "f": 0,
+        "b": 0,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 24,
+        "declaredSource": "Bulk Produktseite",
+        "quality": "A – Herstellerangabe",
+        "nutrientRow": 15,
+        "nutrientComment": ""
+      },
+      "notes": "47 g deklarierte KH pro 50-g-Portion"
+    },
+    {
+      "id": "master15-P024",
+      "name": "AlpenPower Cluster Dextrin Neutral",
+      "unit": "g",
+      "values": {
+        "k": 392,
+        "p": 0,
+        "c": 98,
+        "f": 0,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 25,
+        "declaredSource": "AlpenPower Produktseite + Händler-Nährwertdeklaration",
+        "quality": "A – Hersteller/Zutaten; Nährwerte Händlerdeklaration",
+        "nutrientRow": 16,
+        "nutrientComment": "Zutat/Produktidentität durch AlpenPower bestätigt"
+      },
+      "notes": "Hersteller empfiehlt je nach Einsatz 20–60 g; 50 g als Nährwert-Bezugsportion"
+    },
+    {
+      "id": "master15-P025",
+      "name": "AlpenPower Elektrolyt Stick",
+      "unit": "g",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": null,
+        "f": null,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "file": "Master-Produktdatenbank_1.5.xlsx",
+        "productRow": 26,
+        "declaredSource": "Herstellerangaben aus Elektrolyt-Matrix 4.3",
+        "quality": "A – Herstellerangabe",
+        "mineralRow": 8
+      },
+      "notes": "Quick/Travel-Endurance; Mineralstoffwerte pro Stick"
+    },
+    {
+      "id": "recovery29-F1",
+      "name": "Wildheidelbeeren (Recovery-Matrix 2.9)",
+      "unit": "g",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": 6.1,
+        "f": null,
+        "b": 4.9,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "document": "Recovery-Master-Matrix 2.9.docx",
+        "section": "8 F – Das TK-Fruchtmodul"
+      },
+      "notes": "Nur die in der Matrix genannten Werte. Kein Herstelleretikett. Abweichungen von Backup-Früchten werden getrennt erhalten."
+    },
+    {
+      "id": "recovery29-F2",
+      "name": "Sauerkirschen (Recovery-Matrix 2.9)",
+      "unit": "g",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": 9.8,
+        "f": null,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "document": "Recovery-Master-Matrix 2.9.docx",
+        "section": "8 F – Das TK-Fruchtmodul"
+      },
+      "notes": "Nur die in der Matrix genannten Werte. Kein Herstelleretikett. Abweichungen von Backup-Früchten werden getrennt erhalten."
+    },
+    {
+      "id": "recovery29-F3",
+      "name": "Himbeeren (Recovery-Matrix 2.9)",
+      "unit": "g",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": 5.9,
+        "f": null,
+        "b": 2.8,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "document": "Recovery-Master-Matrix 2.9.docx",
+        "section": "8 F – Das TK-Fruchtmodul"
+      },
+      "notes": "Nur die in der Matrix genannten Werte. Kein Herstelleretikett. Abweichungen von Backup-Früchten werden getrennt erhalten."
+    },
+    {
+      "id": "recovery29-F4",
+      "name": "Mango (Recovery-Matrix 2.9)",
+      "unit": "g",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": 11.3,
+        "f": null,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "document": "Recovery-Master-Matrix 2.9.docx",
+        "section": "8 F – Das TK-Fruchtmodul"
+      },
+      "notes": "Nur die in der Matrix genannten Werte. Kein Herstelleretikett. Abweichungen von Backup-Früchten werden getrennt erhalten."
+    },
+    {
+      "id": "recovery29-F5",
+      "name": "Erdbeeren (Recovery-Matrix 2.9)",
+      "unit": "g",
+      "values": {
+        "k": null,
+        "p": null,
+        "c": 6,
+        "f": null,
+        "b": null,
+        "ca": null,
+        "mg": null,
+        "pot": null,
+        "fe": null,
+        "zn": null,
+        "iod": null,
+        "b12": null,
+        "d": null,
+        "vc": null,
+        "ala": null
+      },
+      "source": {
+        "document": "Recovery-Master-Matrix 2.9.docx",
+        "section": "8 F – Das TK-Fruchtmodul"
+      },
+      "notes": "Nur die in der Matrix genannten Werte. Kein Herstelleretikett. Abweichungen von Backup-Früchten werden getrennt erhalten."
+    }
+  ],
+  "recipes": [],
+  "notices": [
+    "P002: Makrowerte nicht als exakte Werte importiert; Grenzwertkennzeichnung in Quelle nicht durchgängig einzelnen Feldern zuordenbar.",
+    "P003: Makrowerte nicht als exakte Werte importiert; Grenzwertkennzeichnung in Quelle nicht durchgängig einzelnen Feldern zuordenbar.",
+    "P021: Makrowerte nicht als exakte Werte importiert; Grenzwertkennzeichnung in Quelle nicht durchgängig einzelnen Feldern zuordenbar.",
+    "P011: 59 g KH/100 g aus Nährwerte!G5 verwendet; Kohlenhydratprofil nennt 18 g/30 g (=60 g/100 g).",
+    "P023: 95 g KH/100 g aus Nährwerte!G15 verwendet; 47 g/50 g aus Produktnotiz/Kohlenhydratprofil ergeben 94 g/100 g.",
+    "P012: Fett <0,1 g/100 g ist eine Obergrenze; im Schema-1-Import als unbekannt statt exakte 0,1 g erfasst.",
+    "Keine unabhängige Herstellerprüfung. Quellenstatus aus bereitgestellter Arbeitsmappe übernommen.",
+    "Schema 1 bildet Natrium, Kreatin, Aminosäuren und Grenzwerte nicht vollständig ab. Originalangaben im Quellenarchiv erhalten."
+  ],
+  "excluded": [
+    {
+      "id": "P007",
+      "name": "natural elements Glucosamin & Chondroitin",
+      "reason": "Portionseinheit Kapseln ohne eindeutige Massenumrechnung.",
+      "sourceRow": 8
+    },
+    {
+      "id": "P008",
+      "name": "natural elements MSM",
+      "reason": "Portionseinheit Kapseln ohne eindeutige Massenumrechnung.",
+      "sourceRow": 9
+    },
+    {
+      "id": "P017",
+      "name": "4Endurance Cherry Power+",
+      "reason": "Portionseinheit Beutel ohne eindeutige Massenumrechnung.",
+      "sourceRow": 18
+    }
+  ]
+}

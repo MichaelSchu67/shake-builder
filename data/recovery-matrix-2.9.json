@@ -1,7 +1,123 @@
 {
-  "schema": 1,
-  "products": [],
-  "recipes": [],
-  "source": "Recovery-Matrix 2.9",
-  "status": "Originalrezepturen und Originalunterlagen fehlen. Kein importierbarer Rezeptbestand vorhanden."
+  "version": "2.9",
+  "source": "Recovery-Master-Matrix 2.9.docx",
+  "type": "Regeldokument, kein Schema-1-Importpaket",
+  "stages": {
+    "R0": {
+      "name": "Basic",
+      "water": [
+        400,
+        500
+      ],
+      "fruit": [
+        100,
+        100
+      ]
+    },
+    "R1": {
+      "name": "Balance",
+      "water": [
+        450,
+        600
+      ],
+      "fruit": [
+        100,
+        100
+      ],
+      "oats": [
+        25,
+        30
+      ]
+    },
+    "R2": {
+      "name": "Strength",
+      "water": [
+        450,
+        600
+      ],
+      "fruit": [
+        100,
+        100
+      ],
+      "oats": [
+        25,
+        25
+      ]
+    },
+    "R3": {
+      "name": "Performance",
+      "water": [
+        500,
+        600
+      ],
+      "fruit": [
+        100,
+        100
+      ],
+      "carbs": 50
+    },
+    "R4": {
+      "name": "Endurance",
+      "water": [
+        600,
+        750
+      ],
+      "fruit": [
+        100,
+        100
+      ],
+      "carbs": 70
+    },
+    "R5": {
+      "name": "Rapid",
+      "water": [
+        700,
+        800
+      ],
+      "fruit": [
+        0,
+        50
+      ],
+      "carbs": 85
+    },
+    "R6": {
+      "name": "Late",
+      "water": [
+        400,
+        500
+      ],
+      "fruit": [
+        0,
+        50
+      ],
+      "carbs": 25
+    }
+  },
+  "protein": {
+    "target": [
+      33,
+      35
+    ],
+    "defaultTarget": 34,
+    "clearPowder": 40
+  },
+  "electrolytes": {
+    "product": "P001 Bulk",
+    "grams": {
+      "E1": 0.5,
+      "E2": 1,
+      "E3": 1.25
+    }
+  },
+  "creatine": {
+    "product": "P014 AlpenPower Pur Creatin",
+    "gramsPowder": 3.4,
+    "gramsCreatine": 3
+  },
+  "notes": [
+    "Keine feste PP2/PP3-Dosierung in Quelle.",
+    "Pre-Sleep ist ein separates System; nicht automatisch in R6 enthalten.",
+    "Explizite 100-g-Nährwerte haben Vorrang vor abweichenden Portionsnotizen.",
+    "Matrix-Früchte enthalten nur KH und teilweise Ballaststoffe, übrige Nährwerte bleiben unbekannt."
+  ]
 }

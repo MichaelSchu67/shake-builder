@@ -1,0 +1,5129 @@
+{
+  "file": "Master-Produktdatenbank_1.5.xlsx",
+  "sheets": {
+    "START": [
+      {
+        "row": 1,
+        "values": [
+          "Master-Produktdatenbank 1.5",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 3,
+        "values": [
+          "Blatt",
+          "Zweck",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 4,
+        "values": [
+          "Produkte",
+          "Zentrale Stammdaten und eindeutige Produkt-ID.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 5,
+        "values": [
+          "Nährwerte",
+          "Energie und Makronährstoffe.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 6,
+        "values": [
+          "Wirkstoffe",
+          "Vitamine, Extrakte, Kreatin, Kollagen usw.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 7,
+        "values": [
+          "Mineralien",
+          "Elektrolyte und Mineralstoffe.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 8,
+        "values": [
+          "Aminosäuren",
+          "Hersteller-Aminosäureprofile von Proteinprodukten.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 9,
+        "values": [
+          "Verwendung",
+          "Zuordnung zu Bike, Pre-, Intra-, Recovery, Oats usw.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 10,
+        "values": [
+          "Bestand",
+          "Packung, Restmenge, MHD, Preis und Bezugsquelle.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 11,
+        "values": [
+          "Listen",
+          "Dropdown-Werte.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 13,
+        "values": [
+          "Jedes Produkt erhält eine Produkt-ID (P001 usw.). Alle Detailtabellen referenzieren diese ID. Aminosäurewerte werden nur eingetragen, wenn der Hersteller sie veröffentlicht; fehlende Werte werden nicht geschätzt.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 18,
+        "values": [
+          "Version 1.5 – ergänzt um GreatVita MSM, Bloom Naturals Grassgefüttertes Collagen, Bulk Maltodextrin, AlpenPower Cluster Dextrin und AlpenPower Elektrolyt-Sticks; P014 auf AlpenPower Pur Creatin aktualisiert. Kollagen-Aminosäureprofil und Kohlenhydratprofil erweitert.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "Produkte": [
+      {
+        "row": 1,
+        "values": [
+          "Produkt-ID",
+          "Kategorie",
+          "Unterkategorie",
+          "Hersteller",
+          "Produktname",
+          "Variante/Geschmack",
+          "Status",
+          "Portionsgröße",
+          "Einheit Portion",
+          "Empf. Portionen/Tag",
+          "Darreichungsform",
+          "Daten vollständig?",
+          "Hersteller-URL / Quelle",
+          "Notizen",
+          "Rohstoff / Markenrohstoff",
+          "Datenqualität",
+          "Zutaten / Zusammensetzung"
+        ]
+      },
+      {
+        "row": 2,
+        "values": [
+          "P001",
+          "Elektrolyte",
+          "Elektrolytpulver",
+          "Bulk",
+          "Elektrolytpulver",
+          "",
+          "Vorhanden",
+          2,
+          "g",
+          1,
+          "Pulver",
+          "Teilweise",
+          "Bulk Elektrolytpulver.docx",
+          "Portion 2 g",
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 3,
+        "values": [
+          "P002",
+          "Elektrolyte",
+          "Kokosnusswasser-Elektrolyte",
+          "InnoNature",
+          "Elektrolyte Drink auf Basis von Kokosnusswasser",
+          "",
+          "Vorhanden",
+          15,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "Innonature Elektrolyte Drink auf Basis von Kokosnusswasser.docx",
+          "225 g = 15 Portionen",
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 4,
+        "values": [
+          "P003",
+          "Elektrolyte",
+          "Elektrolyt-Mix",
+          "MINAID",
+          "Electrolyte Drink Mix",
+          "Salty Raw",
+          "Vorhanden",
+          3.6,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "MINAID Electrolyte Drink Mix.docx",
+          "",
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 5,
+        "values": [
+          "P004",
+          "Mineralien",
+          "Kaliumcitrat",
+          "HSN",
+          "Kaliumcitrat-Pulver",
+          "",
+          "Vorhanden",
+          1.5,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "HSN Kaliumcitrat.docx",
+          "100 Portionen",
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 6,
+        "values": [
+          "P005",
+          "Mineralien",
+          "Trinatriumcitrat",
+          "",
+          "Trinatriumcitrat E331 Dihydrat",
+          "",
+          "Bestellt",
+          "",
+          "g",
+          "",
+          "Pulver",
+          "Teilweise",
+          "frühere Angabe",
+          "Lebensmittelqualität; Dihydrat",
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 7,
+        "values": [
+          "P006",
+          "Supplement",
+          "Gelenke",
+          "4Endurance",
+          "Pro Flex",
+          "",
+          "Vorhanden",
+          20,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "frühere Produktangaben",
+          "",
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 8,
+        "values": [
+          "P007",
+          "Supplement",
+          "Gelenke",
+          "natural elements",
+          "Glucosamin & Chondroitin",
+          "",
+          "Vorhanden",
+          3,
+          "Kapseln",
+          1,
+          "Kapseln",
+          "Ja",
+          "frühere Produktangaben",
+          "",
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 9,
+        "values": [
+          "P008",
+          "Supplement",
+          "Gelenke",
+          "natural elements",
+          "MSM",
+          "",
+          "Vorhanden",
+          2,
+          "Kapseln",
+          1,
+          "Kapseln",
+          "Ja",
+          "frühere Produktangaben",
+          "",
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 10,
+        "values": [
+          "P009",
+          "Lebensmittel",
+          "Rote-Bete-Saft",
+          "Alnatura",
+          "Bio Rote Bete Saft",
+          "",
+          "Vorhanden",
+          250,
+          "ml",
+          1,
+          "Flüssigkeit",
+          "Teilweise",
+          "frühere Produktangaben",
+          "98–98,8 % Rote-Bete-Saft; Nitrat nicht deklariert",
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 11,
+        "values": [
+          "P010",
+          "Protein",
+          "Whey / Molkenproteinkonzentrat",
+          "AlpenPower",
+          "BIO Whey Protein",
+          "Heidelbeere",
+          "Vorhanden",
+          30,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "Nutzerangabe / Herstelleretikett",
+          "vollständiges Aminosäureprofil",
+          "Bio-Molkenproteinkonzentrat",
+          "A – Herstellerangabe",
+          "Molkenproteinkonzentrat*, Heidelbeerpulver*, natürliches Heidelbeeraroma"
+        ]
+      },
+      {
+        "row": 12,
+        "values": [
+          "P011",
+          "Kohlenhydrate",
+          "Hafer / komplexe KH-Quelle",
+          "AlpenPower",
+          "BIO Haferpulver",
+          null,
+          "Vorhanden",
+          30,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "Nutzerangabe / Herstelleretikett",
+          "ballaststoffhaltige Kohlenhydratquelle",
+          "Bio-Haferpulver",
+          "A – Herstellerangabe",
+          "100 % Haferpulver*"
+        ]
+      },
+      {
+        "row": 13,
+        "values": [
+          "P012",
+          "Protein",
+          "Clear Whey / Molkenprotein-Isolat",
+          "AlpenPower",
+          "Clear Whey Isolat",
+          "Kirsche",
+          "Vorhanden",
+          30,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "Nutzerangabe / Herstelleretikett",
+          "vollständiges Aminosäureprofil",
+          "Natives Molkenprotein-Isolat",
+          "A – Herstellerangabe",
+          "Natives Molkenprotein-Isolat, Aroma, Stevioglycoside, Rote-Bete-Saftpulver"
+        ]
+      },
+      {
+        "row": 14,
+        "values": [
+          "P013",
+          "Protein",
+          "Pflanzlicher Protein-Mix",
+          "vom Achterhof",
+          "Bio Protein Mix",
+          "Rote Beeren",
+          "Vorhanden",
+          30,
+          "g",
+          1,
+          "Pulver",
+          "Teilweise",
+          "Nutzerangabe / Herstelleretikett",
+          "Aminosäureprofil später als Schätzwert",
+          "Reisprotein + Erbsenprotein",
+          "A – Nährwerte / C – Aminosäuren geschätzt",
+          "55 % Reisprotein*, 25 % Erbsenprotein*, Himbeerpulver*, Hagebutten*, Inulinpulver*, Rote Beete*"
+        ]
+      },
+      {
+        "row": 15,
+        "values": [
+          "P014",
+          "Supplement",
+          "Kreatin",
+          "AlpenPower",
+          "Pur Creatin",
+          null,
+          "Vorhanden",
+          3.4,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "Nutzerangabe / Herstelleretikett",
+          "3,4 g täglich in 200 ml Flüssigkeit; Creapure®",
+          "Creapure®",
+          "A – Herstellerangabe",
+          "100 % Creapure® Kreatin Monohydrat"
+        ]
+      },
+      {
+        "row": 16,
+        "values": [
+          "P015",
+          "Kohlenhydrate",
+          "Intra-Workout / KH-Elektrolyt",
+          "4Endurance",
+          "Nrgy Drink 90",
+          null,
+          "Vorhanden",
+          96,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "Nutzerangabe / Herstelleretikett",
+          "90 g KH + Elektrolyte pro Portion",
+          "Nduranz Electrolyte Mix®",
+          "A – Herstellerangabe",
+          "Maltodextrin, Fruktose, Nduranz Electrolyte Mix®, Zitronensäure, Aromen"
+        ]
+      },
+      {
+        "row": 17,
+        "values": [
+          "P016",
+          "Kohlenhydrate",
+          "Intra-Workout / KH-Elektrolyt",
+          "4Endurance",
+          "Nrgy Drink 45",
+          null,
+          "Vorhanden",
+          48,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "Nutzerangabe / Herstelleretikett",
+          "45 g KH + Elektrolyte pro Portion",
+          "Nduranz Electrolyte Mix®",
+          "A – Herstellerangabe",
+          "Maltodextrin, Fruktose, Nduranz Electrolyte Mix®, natürliches Aroma, ggf. Zitronensäure"
+        ]
+      },
+      {
+        "row": 18,
+        "values": [
+          "P017",
+          "Supplement",
+          "Polyphenol-/Recovery-Komplex",
+          "4Endurance",
+          "Cherry Power+",
+          null,
+          "Wunschliste",
+          1,
+          "Beutel",
+          1,
+          "Pulver",
+          "Ja",
+          "Nutzerangabe / Herstelleretikett",
+          "noch nicht vorhanden; WADA-Labortest angegeben",
+          "CherryCraft® / ElderCraft® / exGrape®",
+          "A – Herstellerangabe",
+          "CherryCraft®, ElderCraft®, exGrape®, Maltodextrin, Fructose, Citronensäure"
+        ]
+      },
+      {
+        "row": 19,
+        "values": [
+          "P018",
+          "Protein",
+          "Mehrkomponentenprotein",
+          "Wahbio",
+          "Elite Bio Protein",
+          "Waldbeere",
+          "Vorhanden",
+          30,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "Produktetikett / Nutzerfoto",
+          "450 g; vollständiges Aminosäureprofil",
+          "Bio-Milchproteinisolat / Bio-Whey / Bio-Sojaproteinisolat / Bio-Eiweiß",
+          "A – Herstellerangabe",
+          "Bio-Milchproteinisolat, Bio-Molkenproteinkonzentrat, Bio-Sojaproteinisolat, Bio-Eiweiß, Erdbeerpulver 5 %, Himbeerpulver 0,5 %, Heidelbeerpulver 0,5 %, Brombeerpulver 2,5 %"
+        ]
+      },
+      {
+        "row": 20,
+        "values": [
+          "P019",
+          "Protein",
+          "Mehrkomponentenprotein",
+          "Wahbio",
+          "Elite Bio Protein",
+          "Vanille",
+          "Vorhanden",
+          30,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "Produktetikett / Nutzerfoto",
+          "450 g; vollständiges Aminosäureprofil",
+          "Bio-Milchproteinisolat / Bio-Whey / Bio-Sojaproteinisolat / Bio-Eiweiß",
+          "A – Herstellerangabe",
+          "Bio-Milchproteinisolat, Bio-Molkenproteinkonzentrat, Bio-Sojaproteinisolat, Bio-Eiweiß, Bio-Bourbon-Vanillepulver"
+        ]
+      },
+      {
+        "row": 21,
+        "values": [
+          "P020",
+          "Protein",
+          "Mehrkomponentenprotein",
+          "Wahbio",
+          "Elite Bio Protein",
+          "Pure Protein",
+          "Vorhanden",
+          30,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "Produktetikett / Nutzerfoto",
+          "450 g; vollständiges Aminosäureprofil",
+          "Bio-Milchproteinisolat / Bio-Whey / Bio-Sojaproteinisolat / Bio-Eiweiß",
+          "A – Herstellerangabe",
+          "Bio-Milchproteinisolat, Bio-Molkenproteinkonzentrat, Bio-Sojaproteinisolat, Bio-Eiweiß"
+        ]
+      },
+      {
+        "row": 22,
+        "values": [
+          "P021",
+          "Supplement",
+          "MSM / organischer Schwefel",
+          "GreatVita",
+          "MSM Pulver",
+          null,
+          "Vorhanden",
+          1,
+          "g",
+          2,
+          "Pulver",
+          "Ja",
+          "Nutzerangabe / Herstelleretikett",
+          "Empfehlung 2 x ca. 1 g täglich; Reinheitsangaben 99,99/99,9 % abweichend",
+          "Methylsulfonylmethan (MSM)",
+          "A – Herstellerangabe",
+          "99,99 % Methylsulfonylmethan (MSM)"
+        ]
+      },
+      {
+        "row": 23,
+        "values": [
+          "P022",
+          "Protein",
+          "Kollagenprotein",
+          "Bloom Naturals",
+          "Grassgefüttertes Collagen Pulver",
+          null,
+          "Vorhanden",
+          20,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "Produktetikett / Nutzerfoto",
+          "Kollagenprotein separat von vollständigen Nahrungsproteinen bewerten",
+          "Rinderkollagenhydrolysat",
+          "A – Herstellerangabe",
+          "100 % Kollagen Hydrolysat von Rindern"
+        ]
+      },
+      {
+        "row": 24,
+        "values": [
+          "P023",
+          "Kohlenhydrate",
+          "Maltodextrin",
+          "Bulk",
+          "Maltodextrin",
+          null,
+          "Vorhanden",
+          50,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "Bulk Produktseite",
+          "47 g deklarierte KH pro 50-g-Portion",
+          "Maltodextrin",
+          "A – Herstellerangabe",
+          "Maltodextrin"
+        ]
+      },
+      {
+        "row": 25,
+        "values": [
+          "P024",
+          "Kohlenhydrate",
+          "HBCD / Cluster Dextrin",
+          "AlpenPower",
+          "Cluster Dextrin",
+          "Neutral",
+          "Vorhanden",
+          50,
+          "g",
+          1,
+          "Pulver",
+          "Ja",
+          "AlpenPower Produktseite + Händler-Nährwertdeklaration",
+          "Hersteller empfiehlt je nach Einsatz 20–60 g; 50 g als Nährwert-Bezugsportion",
+          "Cluster Dextrin® / HBCD",
+          "A – Hersteller/Zutaten; Nährwerte Händlerdeklaration",
+          "100 % hochverzweigtes zyklisches Dextrin (Cluster Dextrin®)"
+        ]
+      },
+      {
+        "row": 26,
+        "values": [
+          "P025",
+          "Elektrolyte",
+          "Elektrolyt-Stick",
+          "AlpenPower",
+          "Elektrolyt Stick",
+          null,
+          "Vorhanden",
+          5.5,
+          "g",
+          1,
+          "Stick",
+          "Ja",
+          "Herstellerangaben aus Elektrolyt-Matrix 4.3",
+          "Quick/Travel-Endurance; Mineralstoffwerte pro Stick",
+          "Trinatriumcitrat / Magnesiumcitrat / Kaliumchlorid",
+          "A – Herstellerangabe",
+          "Trinatriumcitrat, Magnesiumcitrat, Kaliumchlorid, Zitronenaroma/-säure, Stevia, Beta-Carotin, Vitamin C, Zink, B-Vitamine"
+        ]
+      }
+    ],
+    "Nährwerte": [
+      {
+        "row": 1,
+        "values": [
+          "Produkt-ID",
+          "Bezugsmenge",
+          "Einheit",
+          "kcal",
+          "kJ",
+          "Protein g",
+          "Kohlenhydrate g",
+          "davon Zucker g",
+          "Fett g",
+          "davon gesättigt g",
+          "Ballaststoffe g",
+          "Salz g",
+          "Quelle/Stand",
+          "Kommentar"
+        ]
+      },
+      {
+        "row": 2,
+        "values": [
+          "P002",
+          100,
+          "g",
+          369,
+          1544,
+          0.6,
+          87,
+          6.2,
+          0.5,
+          0.1,
+          0.5,
+          2.1,
+          "Herstellerangabe",
+          "< Angaben als Grenzwert erfasst"
+        ]
+      },
+      {
+        "row": 3,
+        "values": [
+          "P003",
+          100,
+          "g",
+          27,
+          114,
+          0.5,
+          6.8,
+          0,
+          0.5,
+          0.1,
+          0.5,
+          71.2,
+          "Herstellerangabe",
+          "< Angaben als Grenzwert erfasst"
+        ]
+      },
+      {
+        "row": 4,
+        "values": [
+          "P010",
+          100,
+          "g",
+          391,
+          1637,
+          72,
+          8.5,
+          8.5,
+          5.5,
+          3,
+          null,
+          0.3,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 5,
+        "values": [
+          "P011",
+          100,
+          "g",
+          370,
+          1550,
+          11,
+          59,
+          0.8,
+          6.7,
+          1.1,
+          9.7,
+          0.1,
+          "Herstellerangabe",
+          "Salz <0,1 g"
+        ]
+      },
+      {
+        "row": 6,
+        "values": [
+          "P012",
+          100,
+          "g",
+          343,
+          1457,
+          84,
+          1.4,
+          0.2,
+          0.1,
+          0.1,
+          null,
+          0.07,
+          "Herstellerangabe",
+          "Fett und gesättigt jeweils <0,1 g"
+        ]
+      },
+      {
+        "row": 7,
+        "values": [
+          "P013",
+          100,
+          "g",
+          372,
+          1556.45,
+          67,
+          13,
+          5.3,
+          5.3,
+          1.5,
+          13,
+          0.93,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 8,
+        "values": [
+          "P015",
+          100,
+          "g",
+          375,
+          1569,
+          0,
+          93.8,
+          46,
+          0,
+          0,
+          0,
+          0.76,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 9,
+        "values": [
+          "P016",
+          100,
+          "g",
+          375,
+          1569,
+          0,
+          93.8,
+          46,
+          0,
+          0,
+          null,
+          1.52,
+          "Herstellerangabe",
+          "Ballaststoffe nicht angegeben"
+        ]
+      },
+      {
+        "row": 10,
+        "values": [
+          "P018",
+          100,
+          "g",
+          358,
+          1520,
+          74.8,
+          11.1,
+          6.6,
+          1.6,
+          0.9,
+          null,
+          0.88,
+          "Produktetikett",
+          "Waldbeere"
+        ]
+      },
+      {
+        "row": 11,
+        "values": [
+          "P019",
+          100,
+          "g",
+          354,
+          1501,
+          81.1,
+          5.9,
+          3,
+          1.5,
+          0.9,
+          null,
+          0.16,
+          "Produktetikett",
+          "Vanille"
+        ]
+      },
+      {
+        "row": 12,
+        "values": [
+          "P020",
+          100,
+          "g",
+          359,
+          1525,
+          81.2,
+          5,
+          2.7,
+          1.6,
+          0.9,
+          null,
+          1.08,
+          "Produktetikett",
+          "Pure Protein"
+        ]
+      },
+      {
+        "row": 13,
+        "values": [
+          "P021",
+          100,
+          "g",
+          0.01,
+          0.01,
+          0.01,
+          0.01,
+          0.01,
+          0.01,
+          0.01,
+          null,
+          0.01,
+          "Herstellerangabe",
+          "Alle Werte <0,01; als Grenzwert 0,01 erfasst"
+        ]
+      },
+      {
+        "row": 14,
+        "values": [
+          "P022",
+          100,
+          "g",
+          364,
+          1547,
+          91,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.75,
+          "Produktetikett",
+          null
+        ]
+      },
+      {
+        "row": 15,
+        "values": [
+          "P023",
+          100,
+          "g",
+          380,
+          1615,
+          0,
+          95,
+          8.2,
+          0,
+          0,
+          0,
+          0,
+          "Bulk Produktseite",
+          null
+        ]
+      },
+      {
+        "row": 16,
+        "values": [
+          "P024",
+          100,
+          "g",
+          392,
+          1666,
+          0,
+          98,
+          0,
+          0,
+          0,
+          null,
+          0.03,
+          "Händler-Nährwertdeklaration",
+          "Zutat/Produktidentität durch AlpenPower bestätigt"
+        ]
+      }
+    ],
+    "Wirkstoffe": [
+      {
+        "row": 1,
+        "values": [
+          "Produkt-ID",
+          "Wirkstoff",
+          "Menge",
+          "Einheit",
+          "Bezugsmenge/Portion",
+          "Standardisierung / Extrakt",
+          "Tagesziel/Referenz",
+          "Quelle",
+          "Kommentar"
+        ]
+      },
+      {
+        "row": 2,
+        "values": [
+          "P004",
+          "Kaliumcitrat",
+          1500,
+          "mg",
+          "1,5 g",
+          "",
+          "",
+          "Herstellerangabe",
+          "liefert 540,7 mg Kalium"
+        ]
+      },
+      {
+        "row": 3,
+        "values": [
+          "P006",
+          "Kollagenhydrolysat",
+          9000,
+          "mg",
+          "20 g",
+          "",
+          "",
+          "Herstellerangabe",
+          ""
+        ]
+      },
+      {
+        "row": 4,
+        "values": [
+          "P006",
+          "Glucosaminsulfat",
+          1500,
+          "mg",
+          "20 g",
+          "",
+          "",
+          "Herstellerangabe",
+          "davon Glucosamin 900 mg"
+        ]
+      },
+      {
+        "row": 5,
+        "values": [
+          "P006",
+          "Chondroitinsulfat",
+          1200,
+          "mg",
+          "20 g",
+          "",
+          "",
+          "Herstellerangabe",
+          "davon Chondroitin 970 mg"
+        ]
+      },
+      {
+        "row": 6,
+        "values": [
+          "P006",
+          "MSM",
+          300,
+          "mg",
+          "20 g",
+          "",
+          "",
+          "Herstellerangabe",
+          ""
+        ]
+      },
+      {
+        "row": 7,
+        "values": [
+          "P006",
+          "Boswellia-serrata-Extrakt",
+          200,
+          "mg",
+          "20 g",
+          "",
+          "",
+          "Herstellerangabe",
+          ""
+        ]
+      },
+      {
+        "row": 8,
+        "values": [
+          "P006",
+          "Vitamin C",
+          100,
+          "mg",
+          "20 g",
+          "",
+          "",
+          "Herstellerangabe",
+          ""
+        ]
+      },
+      {
+        "row": 9,
+        "values": [
+          "P006",
+          "Hyaluronsäure",
+          20,
+          "mg",
+          "20 g",
+          "",
+          "",
+          "Herstellerangabe",
+          ""
+        ]
+      },
+      {
+        "row": 10,
+        "values": [
+          "P006",
+          "Vitamin B6",
+          5,
+          "mg",
+          "20 g",
+          "",
+          "",
+          "Herstellerangabe",
+          ""
+        ]
+      },
+      {
+        "row": 11,
+        "values": [
+          "P006",
+          "Vitamin D",
+          7.5,
+          "µg",
+          "20 g",
+          "",
+          "",
+          "Herstellerangabe",
+          ""
+        ]
+      },
+      {
+        "row": 12,
+        "values": [
+          "P007",
+          "D-Glucosaminsulfat",
+          1400,
+          "mg",
+          "3 Kapseln",
+          "",
+          "",
+          "Herstellerangabe",
+          ""
+        ]
+      },
+      {
+        "row": 13,
+        "values": [
+          "P007",
+          "Chondroitinsulfat",
+          1200,
+          "mg",
+          "3 Kapseln",
+          "",
+          "",
+          "Herstellerangabe",
+          ""
+        ]
+      },
+      {
+        "row": 14,
+        "values": [
+          "P007",
+          "Hagebuttenextrakt",
+          200,
+          "mg",
+          "3 Kapseln",
+          "",
+          "",
+          "Herstellerangabe",
+          ""
+        ]
+      },
+      {
+        "row": 15,
+        "values": [
+          "P007",
+          "Vitamin C",
+          80,
+          "mg",
+          "3 Kapseln",
+          "",
+          "",
+          "Herstellerangabe",
+          ""
+        ]
+      },
+      {
+        "row": 16,
+        "values": [
+          "P008",
+          "MSM",
+          1600,
+          "mg",
+          "2 Kapseln",
+          "",
+          "",
+          "Herstellerangabe",
+          ""
+        ]
+      },
+      {
+        "row": 17,
+        "values": [
+          "P014",
+          "Kreatin-Monohydrat",
+          3400,
+          "mg",
+          "3,4 g",
+          "Creapure®",
+          null,
+          "Herstellerangabe",
+          "davon 3000 mg Kreatin"
+        ]
+      },
+      {
+        "row": 18,
+        "values": [
+          "P014",
+          "Kreatin",
+          3000,
+          "mg",
+          "3,4 g",
+          "Creapure®",
+          null,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 19,
+        "values": [
+          "P015",
+          "Nduranz Electrolyte Mix®",
+          1090,
+          "mg",
+          "96 g",
+          null,
+          null,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 20,
+        "values": [
+          "P016",
+          "Nduranz Electrolyte Mix®",
+          1090,
+          "mg",
+          "48 g",
+          null,
+          null,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 21,
+        "values": [
+          "P017",
+          "CherryCraft®",
+          1205,
+          "mg",
+          "1 Beutel",
+          "9–15 % Polyphenole; 2–2,6 % Anthocyane",
+          null,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 22,
+        "values": [
+          "P017",
+          "CherryCraft® Polyphenole",
+          108,
+          "mg",
+          "1 Beutel",
+          null,
+          null,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 23,
+        "values": [
+          "P017",
+          "CherryCraft® Anthocyane",
+          24,
+          "mg",
+          "1 Beutel",
+          null,
+          null,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 24,
+        "values": [
+          "P017",
+          "ElderCraft®",
+          1085,
+          "mg",
+          "1 Beutel",
+          "8,4–15,4 % Polyphenole; 7–8,8 % Anthocyane",
+          null,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 25,
+        "values": [
+          "P017",
+          "ElderCraft® Polyphenole",
+          91,
+          "mg",
+          "1 Beutel",
+          null,
+          null,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 26,
+        "values": [
+          "P017",
+          "ElderCraft® Anthocyane",
+          76,
+          "mg",
+          "1 Beutel",
+          null,
+          null,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 27,
+        "values": [
+          "P017",
+          "exGrape®",
+          454,
+          "mg",
+          "1 Beutel",
+          "95 % Polyphenole; 50 % OPC",
+          null,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 28,
+        "values": [
+          "P017",
+          "exGrape® Polyphenole",
+          431,
+          "mg",
+          "1 Beutel",
+          null,
+          null,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 29,
+        "values": [
+          "P017",
+          "exGrape® OPC",
+          227,
+          "mg",
+          "1 Beutel",
+          null,
+          null,
+          "Herstellerangabe",
+          null
+        ]
+      },
+      {
+        "row": 30,
+        "values": [
+          "P021",
+          "MSM",
+          999.9,
+          "mg",
+          "1 g",
+          "99,99 % Reinheit",
+          null,
+          "berechnet aus Hersteller-Reinheit",
+          "Tagesempfehlung 2 x ca. 1 g"
+        ]
+      },
+      {
+        "row": 31,
+        "values": [
+          "P022",
+          "Rinderkollagenhydrolysat",
+          20000,
+          "mg",
+          "20 g",
+          null,
+          null,
+          "Produktetikett",
+          null
+        ]
+      },
+      {
+        "row": 32,
+        "values": [
+          "P022",
+          "Kupfer",
+          0.6,
+          "mg",
+          "20 g",
+          null,
+          "60 % NRV",
+          "Produktetikett",
+          null
+        ]
+      },
+      {
+        "row": 33,
+        "values": [
+          "P025",
+          "Vitamin C",
+          null,
+          "mg",
+          "1 Stick",
+          null,
+          null,
+          "Herstellerangabe",
+          "Menge in vorliegender Zusammenfassung nicht beziffert"
+        ]
+      },
+      {
+        "row": 34,
+        "values": [
+          "P025",
+          "Zink",
+          null,
+          "mg",
+          "1 Stick",
+          null,
+          null,
+          "Herstellerangabe",
+          "Menge in vorliegender Zusammenfassung nicht beziffert"
+        ]
+      },
+      {
+        "row": 35,
+        "values": [
+          "P025",
+          "B-Vitamine",
+          null,
+          null,
+          "1 Stick",
+          null,
+          null,
+          "Herstellerangabe",
+          "Mengen in vorliegender Zusammenfassung nicht beziffert"
+        ]
+      },
+      {
+        "row": 36,
+        "values": [
+          "P014",
+          "Kreatin",
+          3000,
+          "mg",
+          "3,4 g",
+          "Creapure®",
+          null,
+          "Herstellerangabe",
+          "Verzehrempfehlung: täglich"
+        ]
+      }
+    ],
+    "Mineralien": [
+      {
+        "row": 1,
+        "values": [
+          "Produkt-ID",
+          "Bezugsmenge/Portion",
+          "Natrium mg",
+          "Kalium mg",
+          "Magnesium mg",
+          "Calcium mg",
+          "Chlorid mg",
+          "Phosphor mg",
+          "Eisen mg",
+          "Zink mg",
+          "Weitere Mineralien",
+          "Quelle",
+          "Kommentar"
+        ]
+      },
+      {
+        "row": 2,
+        "values": [
+          "P001",
+          "2 g",
+          1034,
+          306,
+          30,
+          184,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "Herstellerangabe",
+          "NaCl, Kaliumsulfat, Dicalciumphosphat, Magnesiumoxid"
+        ]
+      },
+      {
+        "row": 3,
+        "values": [
+          "P002",
+          "15 g",
+          "",
+          663,
+          72,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "Herstellerangabe",
+          "Salz 0,32 g/Portion; Natrium nicht separat deklariert"
+        ]
+      },
+      {
+        "row": 4,
+        "values": [
+          "P003",
+          "3,6 g",
+          1000,
+          300,
+          90,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "Herstellerangabe",
+          ""
+        ]
+      },
+      {
+        "row": 5,
+        "values": [
+          "P004",
+          "1,5 g",
+          "",
+          540.7,
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "Herstellerangabe",
+          "aus 1500 mg Kaliumcitrat"
+        ]
+      },
+      {
+        "row": 6,
+        "values": [
+          "P015",
+          "96 g",
+          460,
+          null,
+          null,
+          null,
+          525,
+          null,
+          null,
+          null,
+          null,
+          "Herstellerangabe",
+          "Nrgy Drink 90"
+        ]
+      },
+      {
+        "row": 7,
+        "values": [
+          "P016",
+          "48 g",
+          460,
+          null,
+          null,
+          null,
+          525,
+          null,
+          null,
+          null,
+          null,
+          "Herstellerangabe",
+          "Nrgy Drink 45"
+        ]
+      },
+      {
+        "row": 8,
+        "values": [
+          "P025",
+          "5,5 g / 1 Stick",
+          686,
+          330,
+          80,
+          null,
+          299,
+          null,
+          null,
+          null,
+          null,
+          "Herstellerangabe",
+          "AlpenPower Elektrolyt Stick"
+        ]
+      }
+    ],
+    "Aminosäuren": [
+      {
+        "row": 1,
+        "values": [
+          "Produkt-ID",
+          "Bezugsmenge",
+          "Einheit",
+          "Aminosäure",
+          "Menge g",
+          "EAA?",
+          "BCAA?",
+          "Essentiell?",
+          "Quelle",
+          "Kommentar",
+          "Menge pro Portion g",
+          "Anteil am Protein %",
+          "Datenstatus"
+        ]
+      },
+      {
+        "row": 2,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Alanin",
+          3.8,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Herstellerangabe",
+          null,
+          1.14,
+          5.277777777777778,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 3,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Arginin",
+          1.9,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Herstellerangabe",
+          null,
+          0.57,
+          2.638888888888889,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 4,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Asparaginsäure",
+          8.6,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Herstellerangabe",
+          null,
+          2.58,
+          11.944444444444443,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 5,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Cystein",
+          1.8,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Herstellerangabe",
+          null,
+          0.54,
+          2.5,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 6,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Glutaminsäure",
+          14.4,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Herstellerangabe",
+          null,
+          4.32,
+          20,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 7,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Glycin",
+          1.4,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Herstellerangabe",
+          null,
+          0.42,
+          1.9444444444444444,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 8,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Histidin",
+          1.4,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          0.42,
+          1.9444444444444444,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 9,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Isoleucin",
+          5.3,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          1.59,
+          7.361111111111112,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 10,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Leucin",
+          8.8,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          2.64,
+          12.222222222222223,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 11,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Lysin",
+          7.5,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          2.25,
+          10.416666666666668,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 12,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Methionin",
+          1.8,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          0.54,
+          2.5,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 13,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Phenylalanin",
+          2.6,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          0.78,
+          3.6111111111111116,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 14,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Prolin",
+          4.6,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Herstellerangabe",
+          null,
+          1.38,
+          6.388888888888888,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 15,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Serin",
+          4.3,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Herstellerangabe",
+          null,
+          1.29,
+          5.972222222222221,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 16,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Threonin",
+          5.7,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          1.71,
+          7.916666666666666,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 17,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Tryptophan",
+          1.5,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          0.45,
+          2.083333333333333,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 18,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Tyrosin",
+          2.3,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Herstellerangabe",
+          null,
+          0.69,
+          3.194444444444444,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 19,
+        "values": [
+          "P010",
+          100,
+          "g",
+          "Valin",
+          4.8,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          1.44,
+          6.666666666666667,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 20,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Alanin",
+          5.3,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Herstellerangabe",
+          null,
+          1.59,
+          6.309523809523809,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 21,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Arginin",
+          2.1,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Herstellerangabe",
+          null,
+          0.63,
+          2.5,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 22,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Asparaginsäure",
+          10.6,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Herstellerangabe",
+          null,
+          3.18,
+          12.619047619047619,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 23,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Cystein",
+          1.7,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Herstellerangabe",
+          null,
+          0.51,
+          2.0238095238095237,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 24,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Glutaminsäure",
+          17.7,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Herstellerangabe",
+          null,
+          5.31,
+          21.071428571428573,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 25,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Glycin",
+          1.4,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Herstellerangabe",
+          null,
+          0.42,
+          1.6666666666666667,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 26,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Histidin",
+          1.5,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          0.45,
+          1.7857142857142856,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 27,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Isoleucin",
+          6.5,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          1.95,
+          7.738095238095238,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 28,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Leucin",
+          10.7,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          3.21,
+          12.738095238095237,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 29,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Lysin",
+          9.6,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          2.88,
+          11.428571428571429,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 30,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Methionin",
+          2.2,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          0.66,
+          2.619047619047619,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 31,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Phenylalanin",
+          2.9,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          0.87,
+          3.4523809523809526,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 32,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Prolin",
+          6.2,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Herstellerangabe",
+          null,
+          1.86,
+          7.380952380952381,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 33,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Serin",
+          4.6,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Herstellerangabe",
+          null,
+          1.38,
+          5.476190476190475,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 34,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Threonin",
+          7.1,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          2.13,
+          8.45238095238095,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 35,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Tryptophan",
+          1.7,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          0.51,
+          2.0238095238095237,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 36,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Tyrosin",
+          2.7,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Herstellerangabe",
+          null,
+          0.81,
+          3.214285714285715,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 37,
+        "values": [
+          "P012",
+          100,
+          "g",
+          "Valin",
+          5.7,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Herstellerangabe",
+          null,
+          1.71,
+          6.7857142857142865,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 38,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Alanin",
+          2.83,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          0.849,
+          3.783422459893048,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 39,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Arginin",
+          3.38,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          null,
+          1.014,
+          4.518716577540107,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 40,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Asparaginsäure",
+          7.07,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          2.121,
+          9.451871657754012,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 41,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Cystein",
+          0.71,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          null,
+          0.213,
+          0.9491978609625668,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 42,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Glutaminsäure",
+          15.5,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          4.6499999999999995,
+          20.72192513368984,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 43,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Glycin",
+          1.83,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          null,
+          0.549,
+          2.4465240641711232,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 44,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Histidin",
+          1.96,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          0.588,
+          2.620320855614973,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 45,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Isoleucin",
+          3.79,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.137,
+          5.066844919786097,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 46,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Leucin",
+          7.11,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Produktetikett",
+          null,
+          2.133,
+          9.505347593582888,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 47,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Lysin",
+          5.97,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.791,
+          7.981283422459893,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 48,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Methionin",
+          1.87,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          0.561,
+          2.5,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 49,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Phenylalanin",
+          3.68,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.104,
+          4.919786096256685,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 50,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Prolin",
+          6.28,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          1.884,
+          8.39572192513369,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 51,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Serin",
+          4.25,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          1.275,
+          5.6818181818181825,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 52,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Threonin",
+          3.35,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.005,
+          4.47860962566845,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 53,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Tryptophan",
+          1.12,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          0.336,
+          1.4973262032085564,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 54,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Tyrosin",
+          3.45,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          null,
+          1.035,
+          4.612299465240642,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 55,
+        "values": [
+          "P018",
+          100,
+          "g",
+          "Valin",
+          4.39,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.317,
+          5.868983957219251,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 56,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Alanin",
+          2.67,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          0.8009999999999999,
+          3.2922318125770658,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 57,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Arginin",
+          3.43,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          null,
+          1.029,
+          4.229346485819976,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 58,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Asparaginsäure",
+          6.8,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          2.04,
+          8.384710234278668,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 59,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Cystein",
+          0.63,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          null,
+          0.189,
+          0.7768187422934649,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 60,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Glutaminsäure",
+          17.9,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          5.369999999999999,
+          22.071516646115906,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 61,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Glycin",
+          1.88,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          null,
+          0.564,
+          2.318125770653514,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 62,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Histidin",
+          2.22,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          0.666,
+          2.737361282367448,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 63,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Isoleucin",
+          4.34,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.3019999999999998,
+          5.351418002466091,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 64,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Leucin",
+          7.82,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Produktetikett",
+          null,
+          2.346,
+          9.64241676942047,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 65,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Lysin",
+          5.99,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.797,
+          7.3859432799013565,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 66,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Methionin",
+          1.85,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          0.555,
+          2.2811344019728734,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 67,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Phenylalanin",
+          4.06,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.2179999999999997,
+          5.0061652281134394,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 68,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Prolin",
+          6.02,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          1.8059999999999998,
+          7.422934648581997,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 69,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Serin",
+          4.62,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          1.386,
+          5.696670776818743,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 70,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Threonin",
+          3.52,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.056,
+          4.340320591861899,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 71,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Tryptophan",
+          1.13,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          0.33899999999999997,
+          1.3933415536374845,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 72,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Tyrosin",
+          3.46,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          null,
+          1.038,
+          4.266337854500617,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 73,
+        "values": [
+          "P019",
+          100,
+          "g",
+          "Valin",
+          5.01,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.503,
+          6.177558569667077,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 74,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Alanin",
+          3.22,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          0.966,
+          3.9655172413793105,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 75,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Arginin",
+          3.65,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          null,
+          1.095,
+          4.495073891625616,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 76,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Asparaginsäure",
+          7.44,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          2.232,
+          9.16256157635468,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 77,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Cystein",
+          0.92,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          null,
+          0.276,
+          1.1330049261083743,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 78,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Glutaminsäure",
+          16.7,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          5.01,
+          20.566502463054185,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 79,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Glycin",
+          2.28,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          null,
+          0.6839999999999999,
+          2.8078817733990147,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 80,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Histidin",
+          2.17,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          0.6509999999999999,
+          2.672413793103448,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 81,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Isoleucin",
+          4.62,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.386,
+          5.689655172413794,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 82,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Leucin",
+          8.07,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Produktetikett",
+          null,
+          2.421,
+          9.938423645320198,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 83,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Lysin",
+          6.37,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.911,
+          7.844827586206897,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 84,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Methionin",
+          1.99,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          0.597,
+          2.4507389162561575,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 85,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Phenylalanin",
+          4.08,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.224,
+          5.024630541871921,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 86,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Prolin",
+          6.74,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          2.022,
+          8.300492610837438,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 87,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Serin",
+          4.64,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          null,
+          1.392,
+          5.7142857142857135,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 88,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Threonin",
+          3.73,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.119,
+          4.5935960591133,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 89,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Tryptophan",
+          1.23,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          null,
+          0.369,
+          1.5147783251231526,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 90,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Tyrosin",
+          3.57,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          null,
+          1.071,
+          4.396551724137931,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 91,
+        "values": [
+          "P020",
+          100,
+          "g",
+          "Valin",
+          5.32,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Produktetikett",
+          null,
+          1.596,
+          6.551724137931035,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 92,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Leucin",
+          2.4,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Produktetikett",
+          "Kollagenprotein",
+          0.48,
+          2.6373626373626373,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 93,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Lysin",
+          3,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          "Kollagenprotein",
+          0.6000000000000001,
+          3.296703296703297,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 94,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Threonin",
+          1.7,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          "Kollagenprotein",
+          0.34,
+          1.8681318681318682,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 95,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Valin",
+          2,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Produktetikett",
+          "Kollagenprotein",
+          0.4,
+          2.197802197802198,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 96,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Isoleucin",
+          1.1,
+          "Ja",
+          "Ja",
+          "Ja",
+          "Produktetikett",
+          "Kollagenprotein",
+          0.22000000000000003,
+          1.208791208791209,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 97,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Methionin",
+          0.82,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          "Kollagenprotein",
+          0.164,
+          0.901098901098901,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 98,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Tryptophan",
+          0,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          "Kollagenprotein",
+          0,
+          0,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 99,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Histidin",
+          0.82,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          "Kollagenprotein",
+          0.164,
+          0.901098901098901,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 100,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Prolin",
+          12.5,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          "Kollagenprotein",
+          2.5,
+          13.736263736263737,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 101,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Tyrosin",
+          0.55,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          "Kollagenprotein",
+          0.11000000000000001,
+          0.6043956043956045,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 102,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Arginin",
+          7,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          "Kollagenprotein",
+          1.4000000000000001,
+          7.6923076923076925,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 103,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Glycin",
+          21.2,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          "Kollagenprotein",
+          4.24,
+          23.296703296703296,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 104,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Cystein",
+          0,
+          "Nein",
+          "Nein",
+          "Bedingt",
+          "Produktetikett",
+          "Kollagenprotein",
+          0,
+          0,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 105,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Glutaminsäure",
+          9.1,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          "Kollagenprotein",
+          1.82,
+          10,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 106,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Asparaginsäure",
+          4.1,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          "Kollagenprotein",
+          0.82,
+          4.5054945054945055,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 107,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Serin",
+          3.1,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          "Kollagenprotein",
+          0.6200000000000001,
+          3.406593406593407,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 108,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Alanin",
+          7.6,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          "Kollagenprotein",
+          1.52,
+          8.35164835164835,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 109,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Phenylalanin",
+          1.5,
+          "Ja",
+          "Nein",
+          "Ja",
+          "Produktetikett",
+          "Kollagenprotein",
+          0.30000000000000004,
+          1.6483516483516485,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 110,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Hydroxylysin",
+          1.4,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          "Kollagenprotein",
+          0.27999999999999997,
+          1.5384615384615383,
+          "vorhanden"
+        ]
+      },
+      {
+        "row": 111,
+        "values": [
+          "P022",
+          100,
+          "g",
+          "Hydroxyprolin",
+          11.2,
+          "Nein",
+          "Nein",
+          "Nein",
+          "Produktetikett",
+          "Kollagenprotein",
+          2.2399999999999998,
+          12.307692307692307,
+          "vorhanden"
+        ]
+      }
+    ],
+    "Verwendung": [
+      {
+        "row": 1,
+        "values": [
+          "Produkt-ID",
+          "Bike-to-Work",
+          "Pre-Workout",
+          "Intra-Workout",
+          "Recovery",
+          "Overnight Oats",
+          "Alltag",
+          "Gelenke",
+          "Longevity",
+          "Schwimmen",
+          "Krafttraining",
+          "Kommentar"
+        ]
+      },
+      {
+        "row": 2,
+        "values": [
+          "P001",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Elektrolyte"
+        ]
+      },
+      {
+        "row": 3,
+        "values": [
+          "P002",
+          "Optional",
+          "Optional",
+          "Optional",
+          "Ja",
+          "Nein",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Optional",
+          "Optional",
+          "13 g KH/Portion"
+        ]
+      },
+      {
+        "row": 4,
+        "values": [
+          "P003",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Natriumreicher Mix"
+        ]
+      },
+      {
+        "row": 5,
+        "values": [
+          "P004",
+          "Optional",
+          "Optional",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Optional",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Kalium gezielt"
+        ]
+      },
+      {
+        "row": 6,
+        "values": [
+          "P005",
+          "Optional",
+          "Optional",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Optional",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Eigenmischungen"
+        ]
+      },
+      {
+        "row": 7,
+        "values": [
+          "P006",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Gelenke"
+        ]
+      },
+      {
+        "row": 8,
+        "values": [
+          "P007",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Gelenke"
+        ]
+      },
+      {
+        "row": 9,
+        "values": [
+          "P008",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Gelenke"
+        ]
+      },
+      {
+        "row": 10,
+        "values": [
+          "P009",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Nitrat nicht deklariert"
+        ]
+      },
+      {
+        "row": 11,
+        "values": [
+          "P010",
+          "Ja",
+          "Optional",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Whey"
+        ]
+      },
+      {
+        "row": 12,
+        "values": [
+          "P011",
+          "Optional",
+          "Optional",
+          "Nein",
+          "Optional",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Optional",
+          "Optional",
+          "komplexe KH + Ballaststoffe"
+        ]
+      },
+      {
+        "row": 13,
+        "values": [
+          "P012",
+          "Ja",
+          "Optional",
+          "Nein",
+          "Ja",
+          "Optional",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Clear Whey"
+        ]
+      },
+      {
+        "row": 14,
+        "values": [
+          "P013",
+          "Optional",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Optional",
+          "Ja",
+          "pflanzlicher Proteinmix"
+        ]
+      },
+      {
+        "row": 15,
+        "values": [
+          "P014",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Kreatin"
+        ]
+      },
+      {
+        "row": 16,
+        "values": [
+          "P015",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "90 g KH/Portion"
+        ]
+      },
+      {
+        "row": 17,
+        "values": [
+          "P016",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "45 g KH/Portion"
+        ]
+      },
+      {
+        "row": 18,
+        "values": [
+          "P017",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Nein",
+          "Optional",
+          "Nein",
+          "Optional",
+          "Ja",
+          "Ja",
+          "Wunschliste; Polyphenolkomplex"
+        ]
+      },
+      {
+        "row": 19,
+        "values": [
+          "P018",
+          "Optional",
+          "Optional",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Wahbio Mehrkomponentenprotein Waldbeere"
+        ]
+      },
+      {
+        "row": 20,
+        "values": [
+          "P019",
+          "Optional",
+          "Optional",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Wahbio Mehrkomponentenprotein Vanille"
+        ]
+      },
+      {
+        "row": 21,
+        "values": [
+          "P020",
+          "Optional",
+          "Optional",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Wahbio Mehrkomponentenprotein Pure"
+        ]
+      },
+      {
+        "row": 22,
+        "values": [
+          "P021",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Nein",
+          "MSM / Gelenk- und Supplementprotokoll"
+        ]
+      },
+      {
+        "row": 23,
+        "values": [
+          "P022",
+          "Nein",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Optional",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Optional",
+          "Ja",
+          "Kollagenprotein; nicht als Whey-Ersatz bewerten"
+        ]
+      },
+      {
+        "row": 24,
+        "values": [
+          "P023",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Flexible KH-Rohstoffquelle"
+        ]
+      },
+      {
+        "row": 25,
+        "values": [
+          "P024",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "HBCD; besonders bei größeren KH-Mengen/längeren Einheiten"
+        ]
+      },
+      {
+        "row": 26,
+        "values": [
+          "P025",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Ja",
+          "Nein",
+          "Ja",
+          "Nein",
+          "Nein",
+          "Ja",
+          "Ja",
+          "Quick/Travel-Endurance Elektrolyt"
+        ]
+      }
+    ],
+    "Bestand": [
+      {
+        "row": 1,
+        "values": [
+          "Produkt-ID",
+          "Packungsgröße",
+          "Einheit",
+          "Restmenge",
+          "Kaufdatum",
+          "MHD",
+          "Kaufpreis €",
+          "Portionsgröße",
+          "Portionen verbleibend",
+          "Preis/Portion €",
+          "Bezugsquelle",
+          "Nachbestellen?",
+          "Kommentar"
+        ]
+      },
+      {
+        "row": 2,
+        "values": [
+          "P001",
+          "",
+          "g",
+          "",
+          "",
+          "",
+          "",
+          2,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 3,
+        "values": [
+          "P002",
+          225,
+          "g",
+          "",
+          "",
+          "",
+          "",
+          15,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 4,
+        "values": [
+          "P003",
+          "",
+          "g",
+          "",
+          "",
+          "",
+          "",
+          3.6,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 5,
+        "values": [
+          "P004",
+          150,
+          "g",
+          "",
+          "",
+          "",
+          "",
+          1.5,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 6,
+        "values": [
+          "P005",
+          "",
+          "g",
+          "",
+          "",
+          "",
+          "",
+          "",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 7,
+        "values": [
+          "P006",
+          "",
+          "g",
+          "",
+          "",
+          "",
+          "",
+          20,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 8,
+        "values": [
+          "P007",
+          "",
+          "Kapseln",
+          "",
+          "",
+          "",
+          "",
+          3,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 9,
+        "values": [
+          "P008",
+          "",
+          "Kapseln",
+          "",
+          "",
+          "",
+          "",
+          2,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 10,
+        "values": [
+          "P009",
+          "",
+          "ml",
+          "",
+          "",
+          "",
+          "",
+          250,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 11,
+        "values": [
+          "P010",
+          null,
+          "g",
+          null,
+          null,
+          null,
+          null,
+          30,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 12,
+        "values": [
+          "P011",
+          null,
+          "g",
+          null,
+          null,
+          null,
+          null,
+          30,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 13,
+        "values": [
+          "P012",
+          null,
+          "g",
+          null,
+          null,
+          null,
+          null,
+          30,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 14,
+        "values": [
+          "P013",
+          null,
+          "g",
+          null,
+          null,
+          null,
+          null,
+          30,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 15,
+        "values": [
+          "P014",
+          null,
+          "g",
+          null,
+          null,
+          null,
+          null,
+          3.4,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 16,
+        "values": [
+          "P015",
+          1200,
+          "g",
+          null,
+          null,
+          null,
+          null,
+          96,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 17,
+        "values": [
+          "P016",
+          1200,
+          "g",
+          null,
+          null,
+          null,
+          null,
+          48,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 18,
+        "values": [
+          "P017",
+          null,
+          "Beutel",
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          "noch nicht vorhanden"
+        ]
+      },
+      {
+        "row": 19,
+        "values": [
+          "P018",
+          450,
+          "g",
+          null,
+          null,
+          null,
+          null,
+          30,
+          0,
+          0,
+          null,
+          null,
+          "15 Portionen laut Etikett"
+        ]
+      },
+      {
+        "row": 20,
+        "values": [
+          "P019",
+          450,
+          "g",
+          null,
+          null,
+          null,
+          null,
+          30,
+          0,
+          0,
+          null,
+          null,
+          "15 Portionen laut Etikett"
+        ]
+      },
+      {
+        "row": 21,
+        "values": [
+          "P020",
+          450,
+          "g",
+          null,
+          null,
+          null,
+          null,
+          30,
+          0,
+          0,
+          null,
+          null,
+          "15 Portionen laut Etikett"
+        ]
+      },
+      {
+        "row": 22,
+        "values": [
+          "P021",
+          null,
+          "g",
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          "Tagesempfehlung 2 Portionen"
+        ]
+      },
+      {
+        "row": 23,
+        "values": [
+          "P022",
+          null,
+          "g",
+          null,
+          null,
+          null,
+          null,
+          20,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 24,
+        "values": [
+          "P023",
+          null,
+          "g",
+          null,
+          null,
+          null,
+          null,
+          50,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 25,
+        "values": [
+          "P024",
+          1000,
+          "g",
+          null,
+          null,
+          null,
+          null,
+          50,
+          0,
+          0,
+          null,
+          null,
+          "Produktseite 1-kg-Produkt"
+        ]
+      },
+      {
+        "row": 26,
+        "values": [
+          "P025",
+          null,
+          "Stick",
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "Protein-Auswertung": [
+      {
+        "row": 1,
+        "values": [
+          "Protein-Auswertung 1.1",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 3,
+        "values": [
+          "Kennzahl",
+          "Wert",
+          null,
+          "Version 1.3: Protein-Auswertung arbeitet jetzt mit den Hersteller-Aminosäureprofilen von P010 und P012. P013 bleibt bei Aminosäuren zunächst als Schätzwert-Kandidat gekennzeichnet.",
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 4,
+        "values": [
+          "Produkt-ID",
+          "P010",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 5,
+        "values": [
+          "Produktname",
+          "BIO Whey Protein",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 6,
+        "values": [
+          "Portionsgröße",
+          "30 g",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 7,
+        "values": [
+          "Protein pro Portion (g)",
+          21.6,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 8,
+        "values": [
+          "Leucin pro Portion (g)",
+          2.64,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 9,
+        "values": [
+          "Isoleucin pro Portion (g)",
+          1.59,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 10,
+        "values": [
+          "Valin pro Portion (g)",
+          1.44,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 11,
+        "values": [
+          "BCAA gesamt pro Portion (g)",
+          5.67,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 12,
+        "values": [
+          "EAA gesamt pro Portion (g)",
+          11.819999999999999,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "Dashboard": [
+      {
+        "row": 1,
+        "values": [
+          "Master-Produktdatenbank 1.1 – Dashboard",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 3,
+        "values": [
+          "Kennzahl",
+          "Wert",
+          null,
+          "Status",
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 4,
+        "values": [
+          "Produkte gesamt",
+          25,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 5,
+        "values": [
+          "Vorhanden",
+          23,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 6,
+        "values": [
+          "Fast leer",
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 7,
+        "values": [
+          "Bestellt",
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 8,
+        "values": [
+          "Daten vollständig",
+          21,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 9,
+        "values": [
+          "Proteinprodukte",
+          7,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 10,
+        "values": [
+          "Aminosäureprofile mit Werten",
+          6,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "Kohlenhydratprofil": [
+      {
+        "row": 1,
+        "values": [
+          "Produkt-ID",
+          "Kohlenhydratquelle",
+          "Anteil %",
+          "g pro Portion",
+          "Datenqualität",
+          "Quelle",
+          "Kommentar"
+        ]
+      },
+      {
+        "row": 2,
+        "values": [
+          "P011",
+          "Hafer",
+          100,
+          null,
+          "A – Herstellerangabe",
+          "Herstelleretikett",
+          "Produkt besteht aus Haferpulver; Gesamt-KH 18 g/30 g"
+        ]
+      },
+      {
+        "row": 3,
+        "values": [
+          "P015",
+          "Maltodextrin",
+          54,
+          51.84,
+          "B – aus Zutatenanteil berechnet",
+          "Herstelleretikett",
+          "54 % von 96 g Produkt"
+        ]
+      },
+      {
+        "row": 4,
+        "values": [
+          "P015",
+          "Fruktose",
+          43,
+          41.28,
+          "B – aus Zutatenanteil berechnet",
+          "Herstelleretikett",
+          "43 % von 96 g Produkt"
+        ]
+      },
+      {
+        "row": 5,
+        "values": [
+          "P016",
+          "Maltodextrin",
+          null,
+          null,
+          "A – Quelle genannt, Anteil unbekannt",
+          "Herstelleretikett",
+          null
+        ]
+      },
+      {
+        "row": 6,
+        "values": [
+          "P016",
+          "Fruktose",
+          null,
+          null,
+          "A – Quelle genannt, Anteil unbekannt",
+          "Herstelleretikett",
+          null
+        ]
+      },
+      {
+        "row": 7,
+        "values": [
+          "P017",
+          "Maltodextrin",
+          null,
+          null,
+          "A – Quelle genannt, Anteil unbekannt",
+          "Herstelleretikett",
+          null
+        ]
+      },
+      {
+        "row": 8,
+        "values": [
+          "P017",
+          "Fruktose",
+          null,
+          null,
+          "A – Quelle genannt, Anteil unbekannt",
+          "Herstelleretikett",
+          null
+        ]
+      },
+      {
+        "row": 9,
+        "values": [
+          "P023",
+          "Maltodextrin",
+          100,
+          47,
+          "A – Herstellerangabe",
+          "Bulk Produktseite",
+          "50 g Produktportion; 47 g deklarierte Kohlenhydrate"
+        ]
+      },
+      {
+        "row": 10,
+        "values": [
+          "P024",
+          "Cluster Dextrin® / HBCD",
+          100,
+          49,
+          "A – Händlerdeklaration",
+          "AlpenPower + Händler",
+          "50 g Nährwertportion; 98 g KH/100 g"
+        ]
+      },
+      {
+        "row": 11,
+        "values": [
+          "P025",
+          null,
+          null,
+          null,
+          null,
+          "Herstellerangabe",
+          "Elektrolyt-Stick: 0,18 g KH pro 5,5-g-Stick"
+        ]
+      }
+    ],
+    "Protein-Vergleich": [
+      {
+        "row": 1,
+        "values": [
+          "Protein-Vergleich 1.4 – Herstellerprofile",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "row": 3,
+        "values": [
+          "Produkt-ID",
+          "Produkt",
+          "Geschmack",
+          "Portion g",
+          "kcal",
+          "Protein g",
+          "Leucin g",
+          "BCAA g",
+          "EAA g",
+          "Protein/100 kcal g"
+        ]
+      },
+      {
+        "row": 4,
+        "values": [
+          "P010",
+          "BIO Whey Protein",
+          "Heidelbeere",
+          30,
+          117.3,
+          21.6,
+          2.64,
+          5.67,
+          11.819999999999999,
+          18.414322250639387
+        ]
+      },
+      {
+        "row": 5,
+        "values": [
+          "P012",
+          "Clear Whey Isolat",
+          "Kirsche",
+          30,
+          102.9,
+          25.2,
+          3.21,
+          6.87,
+          14.369999999999997,
+          24.489795918367342
+        ]
+      },
+      {
+        "row": 6,
+        "values": [
+          "P018",
+          "Elite Bio Protein",
+          "Waldbeere",
+          30,
+          107.4,
+          22.44,
+          2.133,
+          4.587,
+          9.972,
+          20.893854748603353
+        ]
+      },
+      {
+        "row": 7,
+        "values": [
+          "P019",
+          "Elite Bio Protein",
+          "Vanille",
+          30,
+          106.2,
+          24.33,
+          2.346,
+          5.151,
+          10.782,
+          22.90960451977401
+        ]
+      },
+      {
+        "row": 8,
+        "values": [
+          "P020",
+          "Elite Bio Protein",
+          "Pure Protein",
+          30,
+          107.7,
+          24.36,
+          2.421,
+          5.403,
+          11.274,
+          22.618384401114206
+        ]
+      },
+      {
+        "row": 10,
+        "values": [
+          "Kollagenprotein wird bewusst nicht in das Whey-/EAA-Ranking aufgenommen: P022 liefert 18 g Protein/20 g, aber nur ca. 0,48 g Leucin und 0 g Tryptophan.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ]
+  }
+}

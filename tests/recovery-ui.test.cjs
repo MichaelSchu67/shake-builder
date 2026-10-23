@@ -1,0 +1,16 @@
+const fs=require('fs'),assert=require('node:assert/strict');
+const {session}=require('./app.test.cjs'),{merge}=require('../import-core');
+const original=require('../data/original-backup.json'),pack=require('../data/recovery-startpaket-0.3.json');
+const data=merge(original,pack).result,s=session(JSON.stringify(data));
+const defaults={recoveryStage:'R3',recoveryBasis:'P4',recoveryProteinTarget:'34',recoveryFruitAmount:'100',recoveryOatsAmount:'30',recoveryStrengthMalto:'0',recoveryWater:'500',recoveryE:'E0',recoveryCreatineTarget:'3',recoveryPP:'PP0',recoveryPPAmount:'0',recoveryName:'Mein Recovery-Shake'};
+for(const [id,v] of Object.entries(defaults))s.get(id).value=v;
+s.run(fs.readFileSync('recovery-ui.js','utf8'));
+assert.equal(s.get('saveRecovery').disabled,false);
+const before=JSON.stringify(data.products);s.get('saveRecovery').onclick();
+const saved=JSON.parse(s.data.get('sporternaehrung-shake-builder-v01'));
+assert.equal(saved.recipes.length,7);assert.equal(JSON.stringify(saved.products),before);
+assert.equal(saved.recipes[6].name,'Mein Recovery-Shake');assert.equal(saved.recipes[6].recovery.waterMl,500);
+const reload=session(JSON.stringify(saved));assert(!reload.alerts.length);assert(reload.run('db.recipes[6].recovery.notes.length')>0);
+const names=s.get('productSelect').children.map(o=>o.textContent);assert.deepEqual(names,[...names].sort((a,b)=>a.localeCompare(b,'de',{sensitivity:'base',numeric:true})));
+s.get('recoveryProtein').value='';s.run('updateRecovery()');assert.equal(s.get('saveRecovery').disabled,true);
+console.log('Recovery-Oberflächenabläufe bestanden: Auswahl, Speichern, erneutes Laden, Produktreihenfolge, fehlendes Produkt.');
